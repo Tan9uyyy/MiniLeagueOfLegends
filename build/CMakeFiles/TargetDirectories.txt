@@ -1,0 +1,3 @@
+/home/bouchutt/bouchutt/LeagueOfLegends/build/CMakeFiles/MiniLeagueOfLegends.dir
+/home/bouchutt/bouchutt/LeagueOfLegends/build/CMakeFiles/edit_cache.dir
+/home/bouchutt/bouchutt/LeagueOfLegends/build/CMakeFiles/rebuild_cache.dir
