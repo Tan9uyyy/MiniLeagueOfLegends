@@ -4,7 +4,7 @@ Nexus::Nexus(sf::Vector2f position, Team team)
     : CombatEntity(team, 5000.0f) { // Un Nexus a beaucoup de points de vie
     
     // Taille massive pour le Nexus
-    m_shape.setSize(sf::Vector2f(200.0f, 200.0f));
+    m_shape.setSize({200.0f, 200.0f});
     
     if (team == Team::ALLIED) {
         m_shape.setFillColor(sf::Color(0, 0, 255, 200)); // Bleu translucide
@@ -12,7 +12,7 @@ Nexus::Nexus(sf::Vector2f position, Team team)
         m_shape.setFillColor(sf::Color(255, 0, 0, 200)); // Rouge translucide
     }
     
-    m_shape.setOrigin(100.0f, 100.0f);
+    m_shape.setOrigin({100.0f, 100.0f});
     m_shape.setPosition(position);
 }
 

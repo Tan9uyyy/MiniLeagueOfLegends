@@ -3,7 +3,7 @@
 UIWindow::UIWindow(const sf::Font& font, const std::string& title,
                    sf::Vector2f size, sf::Vector2f position,
                    sf::Color bgColor, sf::Color outlineColor, sf::Color titleBarColor)
-    : m_font(font), m_isOpen(false), m_isDragging(false)
+    : m_font(font), m_titleText(font, title, 14), m_isOpen(false), m_isDragging(false)
 {
     m_background.setSize(size);
     m_background.setFillColor(bgColor);
@@ -15,11 +15,9 @@ UIWindow::UIWindow(const sf::Font& font, const std::string& title,
     m_titleBar.setFillColor(titleBarColor);
     m_titleBar.setPosition(position);
 
-    m_titleText.setFont(m_font);
-    m_titleText.setString(title);
-    m_titleText.setCharacterSize(14);
+    m_titleText = sf::Text(m_font, title, 14);
     m_titleText.setFillColor(sf::Color::White);
-    m_titleText.setPosition(position.x + 10.0f, position.y + 5.0f);
+    m_titleText.setPosition({position.x + 10.0f, position.y + 5.0f});
 }
 
 bool UIWindow::containsMouse(const sf::Vector2f& mousePos) const {
@@ -32,23 +30,27 @@ UIAction UIWindow::handleEvent(const sf::Event& event, const sf::Vector2i& pixel
     sf::Vector2f mousePos = window.mapPixelToCoords(pixelPos, window.getDefaultView());
 
     // --- Drag & Drop (commun à toutes les fenêtres) ---
-    if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-        if (m_titleBar.getGlobalBounds().contains(mousePos)) {
-            m_isDragging = true;
-            m_dragOffset = m_background.getPosition() - mousePos;
-            return UIAction::CONSUMED;
+    if (const auto* mousePressed = event.getIf<sf::Event::MouseButtonPressed>()) {
+        if (mousePressed->button == sf::Mouse::Button::Left) {
+            if (m_titleBar.getGlobalBounds().contains(mousePos)) {
+                m_isDragging = true;
+                m_dragOffset = m_background.getPosition() - mousePos;
+                return UIAction::CONSUMED;
+            }
         }
     }
 
-    if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
-        m_isDragging = false;
+    if (const auto* mouseReleased = event.getIf<sf::Event::MouseButtonReleased>()) {
+        if (mouseReleased->button == sf::Mouse::Button::Left) {
+            m_isDragging = false;
+        }
     }
 
-    if (event.type == sf::Event::MouseMoved && m_isDragging) {
+    if (event.is<sf::Event::MouseMoved>() && m_isDragging) {
         sf::Vector2f newPos = mousePos + m_dragOffset;
         m_background.setPosition(newPos);
         m_titleBar.setPosition(newPos);
-        m_titleText.setPosition(newPos.x + 10.0f, newPos.y + 5.0f);
+        m_titleText.setPosition({newPos.x + 10.0f, newPos.y + 5.0f});
         return UIAction::CONSUMED;
     }
 
@@ -57,7 +59,7 @@ UIAction UIWindow::handleEvent(const sf::Event& event, const sf::Vector2i& pixel
     if (childAction != UIAction::NONE) return childAction;
 
     // --- Blocage générique : tout clic dans la fenêtre est consommé ---
-    if (event.type == sf::Event::MouseButtonPressed || event.type == sf::Event::MouseButtonReleased) {
+    if (event.is<sf::Event::MouseButtonPressed>() || event.is<sf::Event::MouseButtonReleased>()) {
         if (m_background.getGlobalBounds().contains(mousePos)) return UIAction::CONSUMED;
     }
 

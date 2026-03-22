@@ -1,6 +1,6 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: \
- D:\bouchutt\LeagueOfLegends\src\Game.cpp \
- D:/bouchutt/LeagueOfLegends/include/Game.hpp \
+ C:\Users\Tanguy\MiniLeagueOfLegends\src\Game.cpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Game.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \
@@ -285,13 +285,13 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: \
  C:/msys64/ucrt64/include/SFML/System/InputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/MemoryInputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/Sleep.hpp \
- D:/bouchutt/LeagueOfLegends/include/Champion.hpp \
- D:/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- D:/bouchutt/LeagueOfLegends/include/Entity.hpp \
- D:/bouchutt/LeagueOfLegends/include/Team.hpp \
- D:/bouchutt/LeagueOfLegends/include/Item.hpp \
- D:/bouchutt/LeagueOfLegends/include/Map.hpp \
- D:/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Champion.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/CombatEntity.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Entity.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Team.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Item.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Map.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Spell.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
@@ -307,17 +307,17 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
- D:/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
- D:/bouchutt/LeagueOfLegends/include/Renderer.hpp \
- D:/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
- D:/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
- D:/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
- D:/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
- D:/bouchutt/LeagueOfLegends/include/Nexus.hpp \
- D:/bouchutt/LeagueOfLegends/include/Turret.hpp
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUD.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDBar.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDComponent.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDGold.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDLevel.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDSpells.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDStats.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Renderer.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/UIWindow.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/SettingsUI.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/ShopUI.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/ClickIndicator.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Nexus.hpp \
+ C:/Users/Tanguy/MiniLeagueOfLegends/include/Turret.hpp

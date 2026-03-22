@@ -16,7 +16,7 @@ void SpellsDisplay::draw(sf::RenderWindow &window) {
 
     // Fond du sort
     sf::RectangleShape spellBg(sf::Vector2f(spellSize, spellSize));
-    spellBg.setPosition(sx, sy);
+    spellBg.setPosition({sx, sy});
 
     if (spell.level == 0) {
       spellBg.setFillColor(sf::Color(30, 30, 30, 200));
@@ -32,26 +32,26 @@ void SpellsDisplay::draw(sf::RenderWindow &window) {
     window.draw(spellBg);
 
     // Lettre du sort
-    sf::Text keyText(spell.key, m_font, 20);
+    sf::Text keyText(m_font, spell.key, 20);
     keyText.setFillColor(spell.level > 0 ? sf::Color::White
                                          : sf::Color(100, 100, 100));
-    keyText.setPosition(sx + 15.0f, sy + 5.0f);
+    keyText.setPosition({sx + 15.0f, sy + 5.0f});
     window.draw(keyText);
 
     // Niveau du sort
     if (spell.level > 0) {
-      sf::Text lvlText("Nv." + std::to_string(spell.level), m_font, 10);
+      sf::Text lvlText(m_font, "Nv." + std::to_string(spell.level), 10);
       lvlText.setFillColor(sf::Color(200, 200, 200));
-      lvlText.setPosition(sx + 5.0f, sy + 35.0f);
+      lvlText.setPosition({sx + 5.0f, sy + 35.0f});
       window.draw(lvlText);
     }
 
     // Cooldown restant
     if (spell.level > 0 && spell.currentCooldown > 0.0f) {
-      sf::Text cdText(std::to_string((int)spell.currentCooldown + 1), m_font,
+      sf::Text cdText(m_font, std::to_string((int)spell.currentCooldown + 1),
                       18);
       cdText.setFillColor(sf::Color::White);
-      cdText.setPosition(sx + 18.0f, sy + 15.0f);
+      cdText.setPosition({sx + 18.0f, sy + 15.0f});
       window.draw(cdText);
     }
 
@@ -59,12 +59,12 @@ void SpellsDisplay::draw(sf::RenderWindow &window) {
     if (hasSkillPoints && spell.canLevelUp()) {
       sf::CircleShape plusBg(8.0f);
       plusBg.setFillColor(sf::Color(50, 200, 50));
-      plusBg.setPosition(sx + spellSize - 16.0f, sy - 4.0f);
+      plusBg.setPosition({sx + spellSize - 16.0f, sy - 4.0f});
       window.draw(plusBg);
 
-      sf::Text plusText("+", m_font, 12);
+      sf::Text plusText(m_font, "+", 12);
       plusText.setFillColor(sf::Color::White);
-      plusText.setPosition(sx + spellSize - 13.0f, sy - 6.0f);
+      plusText.setPosition({sx + spellSize - 13.0f, sy - 6.0f});
       window.draw(plusText);
     }
   }

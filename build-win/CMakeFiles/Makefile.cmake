@@ -32,6 +32,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
+  "C:/Users/Tanguy/MiniLeagueOfLegends/CMakeLists.txt"
+  "CMakeFiles/4.3.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.3.0/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.3.0/CMakeSystem.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLAudioSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLAudioSharedTargets.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLConfig.cmake"
@@ -42,10 +46,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLSystemSharedTargets.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLWindowSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLWindowSharedTargets.cmake"
-  "D:/bouchutt/LeagueOfLegends/CMakeLists.txt"
-  "CMakeFiles/4.3.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.3.0/CMakeRCCompiler.cmake"
-  "CMakeFiles/4.3.0/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

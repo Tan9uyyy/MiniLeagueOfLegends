@@ -22,9 +22,9 @@ void BarComponent::draw(sf::RenderWindow &window) {
   // Texte (si présent)
   std::string txt = getText();
   if (!txt.empty()) {
-    sf::Text label(txt, m_font, 16);
-    label.setPosition(m_position.x + m_width / 2.0f - 40.0f,
-                      m_position.y + 2.0f);
+    sf::Text label(m_font, txt, 16);
+    label.setPosition({m_position.x + m_width / 2.0f - 40.0f,
+                      m_position.y + 2.0f});
     window.draw(label);
   }
 }
@@ -79,7 +79,7 @@ void XPBar::draw(sf::RenderWindow &window) {
   float pct = getPercentage();
   float filledH = m_height * pct;
   sf::RectangleShape fill(sf::Vector2f(m_width, filledH));
-  fill.setPosition(m_position.x, m_position.y + m_height - filledH);
+  fill.setPosition({m_position.x, m_position.y + m_height - filledH});
   fill.setFillColor(m_color);
   window.draw(fill);
 }

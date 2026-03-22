@@ -14,25 +14,25 @@ void StatsPanel::draw(sf::RenderWindow &window) {
   bg.setOutlineColor(sf::Color(80, 80, 80));
   window.draw(bg);
 
-  sf::Text title("STATS", m_font, 12);
-  title.setPosition(m_position.x + 5.0f, m_position.y + 3.0f);
+  sf::Text title(m_font, "STATS", 12);
+  title.setPosition({m_position.x + 5.0f, m_position.y + 3.0f});
   title.setFillColor(sf::Color(200, 200, 200));
   window.draw(title);
 
-  sf::Text adText("AD : " + std::to_string((int)m_champion->getAttackDamage()),
-                  m_font, 14);
-  adText.setPosition(m_position.x + 5.0f, m_position.y + 23.0f);
+  sf::Text adText(m_font, "AD : " + std::to_string((int)m_champion->getAttackDamage()),
+                  14);
+  adText.setPosition({m_position.x + 5.0f, m_position.y + 23.0f});
   window.draw(adText);
 
   std::ostringstream ss;
   ss << std::fixed << std::setprecision(2) << m_champion->getAttackSpeed();
-  sf::Text asText("AS : " + ss.str(), m_font, 14);
-  asText.setPosition(m_position.x + 5.0f, m_position.y + 43.0f);
+  sf::Text asText(m_font, "AS : " + ss.str(), 14);
+  asText.setPosition({m_position.x + 5.0f, m_position.y + 43.0f});
   window.draw(asText);
 
-  sf::Text rangeText("Portee : " +
+  sf::Text rangeText(m_font, "Portee : " +
                          std::to_string((int)m_champion->getAttackRange()),
-                     m_font, 14);
-  rangeText.setPosition(m_position.x + 5.0f, m_position.y + 63.0f);
+                     14);
+  rangeText.setPosition({m_position.x + 5.0f, m_position.y + 63.0f});
   window.draw(rangeText);
 }

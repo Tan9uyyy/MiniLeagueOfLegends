@@ -26,7 +26,7 @@ private:
   void initViews();
 
   // Factorise l'interception des événements souris par les fenêtres UI
-  bool dispatchMouseEventToWindows(const sf::Event &event);
+  bool dispatchMouseEventToWindows(const sf::Event& event);
 
 private:
   sf::RenderWindow m_window;

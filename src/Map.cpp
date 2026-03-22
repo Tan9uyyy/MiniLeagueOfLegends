@@ -1,11 +1,12 @@
 #include "Map.hpp"
 #include <cmath>
+#include <algorithm>
 
 Map::Map(float width, float height) : m_width(width), m_height(height) {
     // Le fond de la carte (vert très foncé pour simuler l'herbe)
     m_ground.setSize(sf::Vector2f(width, height));
     m_ground.setFillColor(sf::Color(34, 139, 34, 100)); // Forest Green avec de la transparence
-    m_ground.setPosition(0.0f, 0.0f);
+    m_ground.setPosition({0.0f, 0.0f});
 
     // On crée une grille au sol pour mieux se repérer visuellement lors du déplacement
     float gridSize = 100.0f; // Une ligne tous les 100 pixels
@@ -13,7 +14,7 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     // Lignes verticales
     for (float x = 0; x <= width; x += gridSize) {
         sf::RectangleShape line(sf::Vector2f(2.0f, height));
-        line.setPosition(x, 0.0f);
+        line.setPosition({x, 0.0f});
         line.setFillColor(sf::Color(255, 255, 255, 30)); // Blanc très transparent
         m_gridLines.push_back(line);
     }
@@ -21,7 +22,7 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     // Lignes horizontales
     for (float y = 0; y <= height; y += gridSize) {
         sf::RectangleShape line(sf::Vector2f(width, 2.0f));
-        line.setPosition(0.0f, y);
+        line.setPosition({0.0f, y});
         line.setFillColor(sf::Color(255, 255, 255, 30));
         m_gridLines.push_back(line);
     }
@@ -29,24 +30,24 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     // --- Ajout d'obstacles pour tester les collisions ---
     // Mur horizontal au-dessus du centre
     sf::RectangleShape wall1(sf::Vector2f(400.0f, 50.0f));
-    wall1.setPosition(4800.0f, 4700.0f);
+    wall1.setPosition({4800.0f, 4700.0f});
     wall1.setFillColor(sf::Color(100, 100, 100)); // Gris (Pierre)
     m_obstacles.push_back(wall1);
 
     // Mur vertical à droite du centre
     sf::RectangleShape wall2(sf::Vector2f(50.0f, 300.0f));
-    wall2.setPosition(5300.0f, 4800.0f);
+    wall2.setPosition({5300.0f, 4800.0f});
     wall2.setFillColor(sf::Color(100, 100, 100));
     m_obstacles.push_back(wall2);
 
     // Un "T" formé de deux murs en bas à gauche
     sf::RectangleShape wall3(sf::Vector2f(300.0f, 50.0f));
-    wall3.setPosition(4500.0f, 5300.0f);
+    wall3.setPosition({4500.0f, 5300.0f});
     wall3.setFillColor(sf::Color(139, 69, 19)); // Marron (Bois/Arbre)
     m_obstacles.push_back(wall3);
 
     sf::RectangleShape wall4(sf::Vector2f(50.0f, 200.0f));
-    wall4.setPosition(4625.0f, 5100.0f);
+    wall4.setPosition({4625.0f, 5100.0f});
     wall4.setFillColor(sf::Color(139, 69, 19));
     m_obstacles.push_back(wall4);
 }
@@ -69,8 +70,8 @@ void Map::draw(sf::RenderWindow& window) {
 }
 
 void Map::addObstacle(const sf::FloatRect& bounds) {
-    sf::RectangleShape newObs(sf::Vector2f(bounds.width, bounds.height));
-    newObs.setPosition(bounds.left, bounds.top);
+    sf::RectangleShape newObs(bounds.size);
+    newObs.setPosition(bounds.position);
     // On le met transparent car le bâtiment dessine déjà son propre sprite/shape par dessus
     newObs.setFillColor(sf::Color::Transparent); 
     m_obstacles.push_back(newObs);
@@ -91,11 +92,11 @@ bool Map::isColliding(const sf::Vector2f& position, float radius) const {
         float testX = position.x;
         float testY = position.y;
 
-        if (position.x < rect.left) testX = rect.left;
-        else if (position.x > rect.left + rect.width) testX = rect.left + rect.width;
+        if (position.x < rect.position.x) testX = rect.position.x;
+        else if (position.x > rect.position.x + rect.size.x) testX = rect.position.x + rect.size.x;
 
-        if (position.y < rect.top) testY = rect.top;
-        else if (position.y > rect.top + rect.height) testY = rect.top + rect.height;
+        if (position.y < rect.position.y) testY = rect.position.y;
+        else if (position.y > rect.position.y + rect.size.y) testY = rect.position.y + rect.size.y;
 
         // On calcule la distance entre le centre du cercle et ce point le plus proche
         float distX = position.x - testX;
@@ -127,11 +128,11 @@ sf::Vector2f Map::getClosestValidPoint(sf::Vector2f position, float radius) cons
             float testX = position.x;
             float testY = position.y;
 
-            if (position.x < rect.left) testX = rect.left;
-            else if (position.x > rect.left + rect.width) testX = rect.left + rect.width;
+            if (position.x < rect.position.x) testX = rect.position.x;
+            else if (position.x > rect.position.x + rect.size.x) testX = rect.position.x + rect.size.x;
 
-            if (position.y < rect.top) testY = rect.top;
-            else if (position.y > rect.top + rect.height) testY = rect.top + rect.height;
+            if (position.y < rect.position.y) testY = rect.position.y;
+            else if (position.y > rect.position.y + rect.size.y) testY = rect.position.y + rect.size.y;
 
             float distX = position.x - testX;
             float distY = position.y - testY;
@@ -142,19 +143,19 @@ sf::Vector2f Map::getClosestValidPoint(sf::Vector2f position, float radius) cons
                 hitSomething = true;
                 if (distance == 0.0f) {
                     // Le point est PILE au centre du rectangle, il faut le rejeter vers le bord le plus proche
-                    float distLeft = position.x - rect.left;
-                    float distRight = (rect.left + rect.width) - position.x;
-                    float distTop = position.y - rect.top;
-                    float distBottom = (rect.top + rect.height) - position.y;
+                    float distLeft = position.x - rect.position.x;
+                    float distRight = (rect.position.x + rect.size.x) - position.x;
+                    float distTop = position.y - rect.position.y;
+                    float distBottom = (rect.position.y + rect.size.y) - position.y;
                     
                     float minDist = std::min({distLeft, distRight, distTop, distBottom});
                     
                     // On pousse le centre de notre entité hors du rectangle (+ son rayon)
                     // Ajout d'un petit epsilon (0.1f) pour s'assurer qu'on n'est plus tout à fait en collision
-                    if (minDist == distLeft) position.x = rect.left - radius - 0.1f;
-                    else if (minDist == distRight) position.x = rect.left + rect.width + radius + 0.1f;
-                    else if (minDist == distTop) position.y = rect.top - radius - 0.1f;
-                    else position.y = rect.top + rect.height + radius + 0.1f;
+                    if (minDist == distLeft) position.x = rect.position.x - radius - 0.1f;
+                    else if (minDist == distRight) position.x = rect.position.x + rect.size.x + radius + 0.1f;
+                    else if (minDist == distTop) position.y = rect.position.y - radius - 0.1f;
+                    else position.y = rect.position.y + rect.size.y + radius + 0.1f;
                 } else {
                     // Le point n'est pas au centre, on le repousse simplement de "l'Overlap"
                     float overlap = radius - distance + 0.1f;

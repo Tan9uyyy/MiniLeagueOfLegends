@@ -45,9 +45,9 @@ void Game::initViews() {
   float viewportW = minimapSize / desktopMode.size.x;
   float viewportH = minimapSize / desktopMode.size.y;
 
-  m_minimapView.setViewport(sf::FloatRect(1.0f - viewportW - 0.01f,
-                                          1.0f - viewportH - 0.01f, viewportW,
-                                          viewportH));
+  m_minimapView.setViewport(sf::FloatRect({1.0f - viewportW - 0.01f,
+                                          1.0f - viewportH - 0.01f}, {viewportW,
+                                          viewportH}));
 }
 
 void Game::initWorld() {
@@ -111,16 +111,18 @@ void Game::run() {
 
 // --- Factorisation : une seule boucle sur toutes les fenêtres UI ---
 bool Game::dispatchMouseEventToWindows(const sf::Event& event) {
-  bool isMouseEvent = (event.type == sf::Event::MouseButtonPressed ||
-                       event.type == sf::Event::MouseButtonReleased ||
-                       event.type == sf::Event::MouseMoved);
+  bool isMouseEvent = (event.is<sf::Event::MouseButtonPressed>() ||
+                       event.is<sf::Event::MouseButtonReleased>() ||
+                       event.is<sf::Event::MouseMoved>());
   if (!isMouseEvent) return false;
 
   sf::Vector2i pixelPos;
-  if (event.type == sf::Event::MouseMoved) {
-    pixelPos = sf::Vector2i(event.mouseMove.x, event.mouseMove.y);
-  } else {
-    pixelPos = sf::Vector2i(event.mouseButton.x, event.mouseButton.y);
+  if (const auto* mouseMoved = event.getIf<sf::Event::MouseMoved>()) {
+    pixelPos = sf::Vector2i(mouseMoved->position);
+  } else if (const auto* mousePressed = event.getIf<sf::Event::MouseButtonPressed>()) {
+    pixelPos = sf::Vector2i(mousePressed->position);
+  } else if (const auto* mouseReleased = event.getIf<sf::Event::MouseButtonReleased>()) {
+    pixelPos = sf::Vector2i(mouseReleased->position);
   }
 
   for (auto* win : m_uiWindows) {
@@ -140,38 +142,37 @@ bool Game::dispatchMouseEventToWindows(const sf::Event& event) {
 }
 
 void Game::processEvents() {
-  sf::Event event;
-  while (m_window.pollEvent(event)) {
-    if (event.type == sf::Event::Closed)
+  while (const auto event = m_window.pollEvent()) {
+    if (event->is<sf::Event::Closed>())
       m_window.close();
 
     // Raccourcis clavier
-    if (event.type == sf::Event::KeyPressed) {
-      if (event.key.code == sf::Keyboard::Escape && m_settingsUI)
+    if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>()) {
+      if (keyPressed->code == sf::Keyboard::Key::Escape && m_settingsUI)
         m_settingsUI->toggle();
-      if (event.key.code == sf::Keyboard::P && m_shopUI)
+      if (keyPressed->code == sf::Keyboard::Key::P && m_shopUI)
         m_shopUI->toggle();
 
       // Debug : Level Up avec L
-      if (event.key.code == sf::Keyboard::L && m_champion)
+      if (keyPressed->code == sf::Keyboard::Key::L && m_champion)
         m_champion->debugLevelUp();
 
       // Sorts : Ctrl+Touche = upgrade, Touche seule = cast
       if (m_champion) {
-        bool ctrl = event.key.control;
-        if (event.key.code == sf::Keyboard::Key::A) {
+        bool ctrl = keyPressed->control;
+        if (keyPressed->code == sf::Keyboard::Key::A) {
           if (ctrl) m_champion->upgradeSpell(0);
           else m_champion->castSpell(0);
         }
-        if (event.key.code == sf::Keyboard::Key::Z) {
+        if (keyPressed->code == sf::Keyboard::Key::Z) {
           if (ctrl) m_champion->upgradeSpell(1);
           else m_champion->castSpell(1);
         }
-        if (event.key.code == sf::Keyboard::Key::E) {
+        if (keyPressed->code == sf::Keyboard::Key::E) {
           if (ctrl) m_champion->upgradeSpell(2);
           else m_champion->castSpell(2);
         }
-        if (event.key.code == sf::Keyboard::Key::R) {
+        if (keyPressed->code == sf::Keyboard::Key::R) {
           if (ctrl) m_champion->upgradeSpell(3);
           else m_champion->castSpell(3);
         }
@@ -179,45 +180,45 @@ void Game::processEvents() {
     }
 
     // Dispatch souris aux fenêtres UI (factorisé !)
-    if (dispatchMouseEventToWindows(event))
+    if (dispatchMouseEventToWindows(*event))
       continue;
 
     // Clic gauche sur le bouton BOUTIQUE du HUD
-    if (event.type == sf::Event::MouseButtonPressed &&
-        event.mouseButton.button == sf::Mouse::Button::Left) {
-      sf::Vector2i pixelPos(event.mouseButton.x, event.mouseButton.y);
-      sf::Vector2f uiPos =
-          m_window.mapPixelToCoords(pixelPos, m_window.getDefaultView());
-      if (m_hud && m_hud->isShopButtonClicked(uiPos)) {
-        if (m_shopUI) m_shopUI->toggle();
-        continue;
-      }
-    }
-
-    // Clic droit dans le monde
-    if (event.type == sf::Event::MouseButtonPressed &&
-        event.mouseButton.button == sf::Mouse::Right) {
-      sf::Vector2i pixelPos(event.mouseButton.x, event.mouseButton.y);
-      sf::Vector2f worldPos = m_window.mapPixelToCoords(pixelPos, m_camera);
-
-      bool enemyClicked = false;
-
-      for (auto& entity : m_entities) {
-        if (auto combatEntity = dynamic_cast<CombatEntity*>(entity.get())) {
-          if (combatEntity->getTeam() != Team::ALLIED &&
-              combatEntity->getBounds().contains(worldPos) &&
-              !combatEntity->isDead()) {
-            m_champion->setTargetEntity(combatEntity);
-            enemyClicked = true;
-            break;
-          }
+    if (const auto* mousePressed = event->getIf<sf::Event::MouseButtonPressed>()) {
+      if (mousePressed->button == sf::Mouse::Button::Left) {
+        sf::Vector2i pixelPos(mousePressed->position);
+        sf::Vector2f uiPos =
+            m_window.mapPixelToCoords(pixelPos, m_window.getDefaultView());
+        if (m_hud && m_hud->isShopButtonClicked(uiPos)) {
+          if (m_shopUI) m_shopUI->toggle();
+          continue;
         }
       }
 
-      for (auto& entity : m_entities) {
-        if (enemyClicked && entity.get() == m_champion)
-          continue;
-        entity->setTargetPosition(worldPos);
+      // Clic droit dans le monde
+      if (mousePressed->button == sf::Mouse::Button::Right) {
+        sf::Vector2i pixelPos(mousePressed->position);
+        sf::Vector2f worldPos = m_window.mapPixelToCoords(pixelPos, m_camera);
+
+        bool enemyClicked = false;
+
+        for (auto& entity : m_entities) {
+          if (auto combatEntity = dynamic_cast<CombatEntity*>(entity.get())) {
+            if (combatEntity->getTeam() != Team::ALLIED &&
+                combatEntity->getBounds().contains(worldPos) &&
+                !combatEntity->isDead()) {
+              m_champion->setTargetEntity(combatEntity);
+              enemyClicked = true;
+              break;
+            }
+          }
+        }
+
+        for (auto& entity : m_entities) {
+          if (enemyClicked && entity.get() == m_champion)
+            continue;
+          entity->setTargetPosition(worldPos);
+        }
       }
     }
   }

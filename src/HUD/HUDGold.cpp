@@ -5,8 +5,8 @@ GoldDisplay::GoldDisplay(Champion *champion, const sf::Font &font)
     : HUDComponent(champion, font) {}
 
 void GoldDisplay::draw(sf::RenderWindow &window) {
-  sf::Text goldText("GOLDS : " + std::to_string((int)m_champion->getGold()),
-                    m_font, 20);
+  sf::Text goldText(m_font, "GOLDS : " + std::to_string((int)m_champion->getGold()),
+                    20);
   goldText.setFillColor(sf::Color::Yellow);
   goldText.setPosition(m_position);
   window.draw(goldText);
@@ -24,11 +24,11 @@ void ShopButton::draw(sf::RenderWindow &window) {
   shopBtn.setOutlineColor(sf::Color(200, 150, 50));
   window.draw(shopBtn);
 
-  sf::Text shopText("BOUTIQUE [P]", m_font, 14);
-  shopText.setPosition(m_position.x + 10.0f, m_position.y + 6.0f);
+  sf::Text shopText(m_font, "BOUTIQUE [P]", 14);
+  shopText.setPosition({m_position.x + 10.0f, m_position.y + 6.0f});
   window.draw(shopText);
 }
 
 sf::FloatRect ShopButton::getBounds() const {
-  return sf::FloatRect(m_position.x, m_position.y, 130.0f, 30.0f);
+  return sf::FloatRect({m_position.x, m_position.y}, {130.0f, 30.0f});
 }

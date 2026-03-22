@@ -14,7 +14,7 @@ Champion::Champion(sf::Vector2f startPosition, const Map &map, Team team)
     m_shape.setFillColor(sf::Color::Red);
   }
 
-  m_shape.setOrigin(20.0f, 20.0f);
+  m_shape.setOrigin({20.0f, 20.0f});
   m_shape.setPosition(startPosition);
 
   // Initialisation des 4 sorts
@@ -44,7 +44,7 @@ void Champion::setTargetPosition(sf::Vector2f target) {
     for (const auto &point : m_path) {
       sf::CircleShape p(5.0f);
       p.setFillColor(sf::Color::Red);
-      p.setOrigin(5.0f, 5.0f);
+      p.setOrigin({5.0f, 5.0f});
       p.setPosition(point);
       m_debugPathShapes.push_back(p);
     }
@@ -99,8 +99,8 @@ void Champion::update(float deltaTime) {
     } else {
       // Calcul de la distance avec la cible
       sf::FloatRect targetBounds = m_target->getBounds();
-      sf::Vector2f targetCenter(targetBounds.left + targetBounds.width / 2.0f,
-                                targetBounds.top + targetBounds.height / 2.0f);
+      sf::Vector2f targetCenter(targetBounds.position.x + targetBounds.size.x / 2.0f,
+                                targetBounds.position.y + targetBounds.size.y / 2.0f);
       sf::Vector2f myPos = getPosition();
 
       float dx = targetCenter.x - myPos.x;
@@ -111,7 +111,7 @@ void Champion::update(float deltaTime) {
       // (attaquer le "bord")
       float effectiveRange =
           m_attackRange +
-          std::max(targetBounds.width, targetBounds.height) / 2.0f;
+          std::max(targetBounds.size.x, targetBounds.size.y) / 2.0f;
 
       if (distance <= effectiveRange) {
         // À portée ! On s'arrête et on tape
@@ -186,13 +186,13 @@ void Champion::draw(sf::RenderWindow &window) {
   // Dessin du laser d'attaque si actif
   if (m_isAttacking && m_target) {
     sf::FloatRect targetBounds = m_target->getBounds();
-    sf::Vector2f targetCenter(targetBounds.left + targetBounds.width / 2.0f,
-                              targetBounds.top + targetBounds.height / 2.0f);
+    sf::Vector2f targetCenter(targetBounds.position.x + targetBounds.size.x / 2.0f,
+                              targetBounds.position.y + targetBounds.size.y / 2.0f);
     sf::Vector2f myPos = getPosition();
 
-    sf::Vertex line[] = {sf::Vertex(myPos, sf::Color::Yellow),
-                         sf::Vertex(targetCenter, sf::Color::Red)};
-    window.draw(line, 2, sf::Lines);
+    sf::Vertex line[] = {{myPos, sf::Color::Yellow},
+                         {targetCenter, sf::Color::Red}};
+    window.draw(line, 2, sf::PrimitiveType::Lines);
   }
 
   // Dessiner la propre barre de vie du champion

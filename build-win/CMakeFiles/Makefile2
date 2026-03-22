@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\bouchutt\LeagueOfLegends
+CMAKE_SOURCE_DIR = C:\Users\Tanguy\MiniLeagueOfLegends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\bouchutt\LeagueOfLegends\build-win
+CMAKE_BINARY_DIR = C:\Users\Tanguy\MiniLeagueOfLegends\build-win
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -84,14 +84,14 @@ clean: CMakeFiles/MiniLeagueOfLegends.dir/clean
 CMakeFiles/MiniLeagueOfLegends.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target MiniLeagueOfLegends"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target MiniLeagueOfLegends"
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MiniLeagueOfLegends.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MiniLeagueOfLegends.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles 0
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/rule
 
 # Convenience name for target.
@@ -101,7 +101,7 @@ MiniLeagueOfLegends: CMakeFiles/MiniLeagueOfLegends.dir/rule
 # codegen rule for target.
 CMakeFiles/MiniLeagueOfLegends.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target MiniLeagueOfLegends"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target MiniLeagueOfLegends"
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/codegen
 
 # clean rule for target.

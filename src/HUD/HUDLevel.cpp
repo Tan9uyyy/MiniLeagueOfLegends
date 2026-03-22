@@ -13,13 +13,13 @@ void LevelBadge::draw(sf::RenderWindow &window) {
   badge.setPosition(m_position);
   window.draw(badge);
 
-  sf::Text levelText(std::to_string(m_champion->getLevel()), m_font, 18);
+  sf::Text levelText(m_font, std::to_string(m_champion->getLevel()), 18);
   levelText.setFillColor(sf::Color(255, 215, 0));
 
   // Center logic
   float ltX = m_position.x + badgeRadius -
               (m_champion->getLevel() >= 10 ? 10.0f : 5.0f);
   float ltY = m_position.y + badgeRadius - 12.0f;
-  levelText.setPosition(ltX, ltY);
+  levelText.setPosition({ltX, ltY});
   window.draw(levelText);
 }

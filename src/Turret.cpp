@@ -21,8 +21,8 @@ Turret::Turret(sf::Vector2f position, Team team)
     
     m_rangeShape.setOutlineThickness(2.0f);
     
-    m_baseShape.setOrigin(50.0f, 50.0f);
-    m_rangeShape.setOrigin(m_attackRange, m_attackRange);
+    m_baseShape.setOrigin({50.0f, 50.0f});
+    m_rangeShape.setOrigin({m_attackRange, m_attackRange});
     
     m_baseShape.setPosition(position);
     m_rangeShape.setPosition(position);

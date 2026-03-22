@@ -1,4 +1,5 @@
 #include "ClickIndicator.hpp"
+#include <cstdint> // Added for std::uint8_t
 
 ClickIndicator::ClickIndicator() : m_lifeTime(0.0f), m_maxLifeTime(0.4f), m_isActive(false) {
     // On initialise la forme (un cercle vide avec une bordure)
@@ -27,10 +28,10 @@ void ClickIndicator::update(float deltaTime) {
             // Animation : le rayon rétrécit de 25 pixels jusqu'à 5 pixels au centre
             float radius = 25.0f - (20.0f * ratio);
             m_shape.setRadius(radius);
-            m_shape.setOrigin(radius, radius); // On recentre l'origine pour que le rétrécissement se fasse par le milieu
+            m_shape.setOrigin({radius, radius}); // On recentre l'origine pour que le rétrécissement se fasse par le milieu
             
             // Animation : disparition progressive (fondu)
-            sf::Uint8 alpha = static_cast<sf::Uint8>(255.0f * (1.0f - ratio));
+            std::uint8_t alpha = static_cast<std::uint8_t>(255.0f * (1.0f - ratio));
             sf::Color color = sf::Color::Green; 
             color.a = alpha; // Modification du canal de transparence (Alpha)
             m_shape.setOutlineColor(color);
