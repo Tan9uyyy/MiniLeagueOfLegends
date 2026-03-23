@@ -48,7 +48,7 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
                     }
                     if (realIndex != -1) {
                         m_selectedItemIndex = realIndex;
-                        if (isRight) m_champion->buyItem(m_allItems[realIndex]);
+                        if (isRight && m_champion->canShop()) m_champion->buyItem(m_allItems[realIndex]);
                         return UIAction::CONSUMED;
                     }
                 }
@@ -59,7 +59,7 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
             for (int i = 0; i < (int)inv.size(); ++i) {
                 sf::FloatRect slotBounds({basePos.x + 100 + i * 50.0f, basePos.y + 345}, {40, 40});
                 if (slotBounds.contains(mousePos)) {
-                    if (isRight) m_champion->sellItem(i);
+                    if (isRight && m_champion->canShop()) m_champion->sellItem(i);
                     return UIAction::CONSUMED;
                 }
             }
@@ -68,7 +68,9 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
             if (isLeft && m_selectedItemIndex != -1) {
                 sf::FloatRect buyBtn({basePos.x + 350, basePos.y + 300}, {100, 40});
                 if (buyBtn.contains(mousePos)) {
-                    m_champion->buyItem(m_allItems[m_selectedItemIndex]);
+                    if (m_champion->canShop()) {
+                        m_champion->buyItem(m_allItems[m_selectedItemIndex]);
+                    }
                     return UIAction::CONSUMED;
                 }
 
@@ -76,7 +78,9 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
                 if (invIdx != -1) {
                     sf::FloatRect sellBtn({basePos.x + 460, basePos.y + 300}, {100, 40});
                     if (sellBtn.contains(mousePos)) {
-                        m_champion->sellItem(invIdx);
+                        if (m_champion->canShop()) {
+                            m_champion->sellItem(invIdx);
+                        }
                         return UIAction::CONSUMED;
                     }
                 }
@@ -134,12 +138,22 @@ void ShopUI::onDraw(sf::RenderWindow& window, const sf::Vector2f& basePos) {
         window.draw(detailName);
         window.draw(detailDesc);
 
+        // Message si on ne peut pas acheter/vendre
+        bool canShop = m_champion->canShop();
+        if (!canShop) {
+            sf::Text warning(font, "RETOURNEZ A LA BASE", 12);
+            warning.setFillColor(sf::Color::Red);
+            warning.setPosition({basePos.x + 350, basePos.y + 280});
+            window.draw(warning);
+        }
+
         // Bouton Acheter
         sf::RectangleShape buyBtn(sf::Vector2f(100.0f, 40.0f));
         buyBtn.setPosition({basePos.x + 350, basePos.y + 300});
-        buyBtn.setFillColor(sf::Color(39, 174, 96));
+        buyBtn.setFillColor(canShop ? sf::Color(39, 174, 96) : sf::Color(100, 100, 100)); // Gris si on ne peut pas
         sf::Text buyText(font, "ACHETER", 14);
         buyText.setPosition({basePos.x + 365, basePos.y + 310});
+        buyText.setFillColor(canShop ? sf::Color::White : sf::Color(200, 200, 200));
         window.draw(buyBtn);
         window.draw(buyText);
 
@@ -148,9 +162,10 @@ void ShopUI::onDraw(sf::RenderWindow& window, const sf::Vector2f& basePos) {
         if (invIdx != -1) {
             sf::RectangleShape sellBtn(sf::Vector2f(100.0f, 40.0f));
             sellBtn.setPosition({basePos.x + 460, basePos.y + 300});
-            sellBtn.setFillColor(sf::Color(192, 57, 43));
+            sellBtn.setFillColor(canShop ? sf::Color(192, 57, 43) : sf::Color(100, 100, 100)); // Gris si on ne peut pas
             sf::Text sellText(font, "VENDRE", 14);
             sellText.setPosition({basePos.x + 475, basePos.y + 310});
+            sellText.setFillColor(canShop ? sf::Color::White : sf::Color(200, 200, 200));
             window.draw(sellBtn);
             window.draw(sellText);
         }

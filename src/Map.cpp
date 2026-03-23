@@ -50,6 +50,22 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     wall4.setPosition({4625.0f, 5100.0f});
     wall4.setFillColor(sf::Color(139, 69, 19));
     m_obstacles.push_back(wall4);
+
+    // --- Configuration des zones d'apparition ---
+    float spawnRadius = 400.0f;
+    m_alliedSpawn.setRadius(spawnRadius);
+    m_alliedSpawn.setOrigin({spawnRadius, spawnRadius});
+    m_alliedSpawn.setPosition({1300.0f, 8800.0f}); // Centre = position de départ du champion
+    m_alliedSpawn.setFillColor(sf::Color(0, 0, 255, 40)); // Bleu transparent
+    m_alliedSpawn.setOutlineThickness(2.0f);
+    m_alliedSpawn.setOutlineColor(sf::Color(100, 100, 255, 150));
+
+    m_enemySpawn.setRadius(spawnRadius);
+    m_enemySpawn.setOrigin({spawnRadius, spawnRadius});
+    m_enemySpawn.setPosition({2600.0f, 7900.0f}); // Derrière le nexus ennemi
+    m_enemySpawn.setFillColor(sf::Color(255, 0, 0, 40)); // Rouge transparent
+    m_enemySpawn.setOutlineThickness(2.0f);
+    m_enemySpawn.setOutlineColor(sf::Color(255, 100, 100, 150));
 }
 
 void Map::update(float /*deltaTime*/) {
@@ -67,6 +83,10 @@ void Map::draw(sf::RenderWindow& window) {
     for (const auto& obs : m_obstacles) {
         window.draw(obs);
     }
+
+    // On dessine les zones d'apparition
+    window.draw(m_alliedSpawn);
+    window.draw(m_enemySpawn);
 }
 
 void Map::addObstacle(const sf::FloatRect& bounds) {
@@ -75,6 +95,21 @@ void Map::addObstacle(const sf::FloatRect& bounds) {
     // On le met transparent car le bâtiment dessine déjà son propre sprite/shape par dessus
     newObs.setFillColor(sf::Color::Transparent); 
     m_obstacles.push_back(newObs);
+}
+
+sf::Vector2f Map::getSpawnPosition(Team team) const {
+    if (team == Team::ALLIED) return m_alliedSpawn.getPosition();
+    return m_enemySpawn.getPosition();
+}
+
+bool Map::isInSpawnArea(const sf::Vector2f& position, Team team) const {
+    const sf::CircleShape& spawnZone = (team == Team::ALLIED) ? m_alliedSpawn : m_enemySpawn;
+    sf::Vector2f center = spawnZone.getPosition();
+    float dx = position.x - center.x;
+    float dy = position.y - center.y;
+    float distanceSquared = dx * dx + dy * dy;
+    float radius = spawnZone.getRadius();
+    return distanceSquared <= (radius * radius);
 }
 
 bool Map::isColliding(const sf::Vector2f& position, float radius) const {

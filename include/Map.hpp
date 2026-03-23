@@ -1,5 +1,6 @@
 #pragma once
 #include "Entity.hpp"
+#include "Team.hpp"
 #include <vector>
 
 class Map : public Entity {
@@ -8,6 +9,12 @@ public:
 
     void update(float deltaTime) override;
     void draw(sf::RenderWindow& window) override;
+
+    // Récupérer la position centrale de la zone d'apparition d'une équipe
+    sf::Vector2f getSpawnPosition(Team team) const;
+
+    // Vérifier si une position est dans la zone d'apparition d'une équipe
+    bool isInSpawnArea(const sf::Vector2f& position, Team team) const;
 
     // Vérifie si une position donnée (avec un rayon) entre en collision avec le décor
     bool isColliding(const sf::Vector2f& position, float radius) const;
@@ -34,4 +41,8 @@ private:
     sf::RectangleShape m_ground;
     std::vector<sf::RectangleShape> m_gridLines;
     std::vector<sf::RectangleShape> m_obstacles; // Murs / Arbres
+    
+    // Zones d'apparition
+    sf::CircleShape m_alliedSpawn;
+    sf::CircleShape m_enemySpawn;
 };

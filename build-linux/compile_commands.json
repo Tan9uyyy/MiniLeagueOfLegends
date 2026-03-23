@@ -1,110 +1,110 @@
 [
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/main.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/main.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/main.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/main.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Game.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Game.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Game.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Game.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Champion.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Champion.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Champion.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Champion.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Map.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Map.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Map.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Map.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Nexus.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Nexus.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Nexus.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Nexus.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Turret.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Turret.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Turret.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Turret.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/ShopUI.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/ShopUI.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ShopUI.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ShopUI.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/SettingsUI.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/SettingsUI.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/SettingsUI.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/SettingsUI.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/UIWindow.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/UIWindow.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/UIWindow.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/UIWindow.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.o"
 },
 {
-  "directory": "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux",
-  "command": "/usr/bin/c++  -I/home/bouchutt/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o -c /home/bouchutt/bouchutt/LeagueOfLegends/src/Renderer.cpp",
-  "file": "/home/bouchutt/bouchutt/LeagueOfLegends/src/Renderer.cpp",
+  "directory": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux",
+  "command": "/usr/bin/c++  -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o -c /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Renderer.cpp",
+  "file": "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Renderer.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o"
 }
 ]

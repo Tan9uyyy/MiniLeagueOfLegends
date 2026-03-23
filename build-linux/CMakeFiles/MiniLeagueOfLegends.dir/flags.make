@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bouchutt/bouchutt/LeagueOfLegends/include
+CXX_INCLUDES = -I/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include
 
 CXX_FLAGS = -std=c++17 -Wall -Wextra -Wpedantic
 

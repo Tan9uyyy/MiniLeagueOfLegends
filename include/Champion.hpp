@@ -22,6 +22,9 @@ public:
   // Surcharge de la méthode pour gérer le déplacement par clic
   void setTargetPosition(sf::Vector2f target) override;
 
+  // Surcharge pour gérer les dégâts (interrompt le rappel)
+  virtual void takeDamage(float amount) override;
+
   // Retourne la position actuelle du champion pour que la caméra puisse le
   // suivre
   sf::Vector2f getPosition() const;
@@ -36,6 +39,7 @@ public:
   bool buyItem(const ItemTemplate &item);
   bool sellItem(int inventoryIndex);
   bool hasFinalItem(int itemId) const;
+  bool canShop() const;
 
   // Accesseurs pour l'Interface Utilisateur (HUD)
   float getMana() const { return m_currentMana; }
@@ -56,6 +60,10 @@ public:
   void debugLevelUp();
   int getXP() const { return m_xp; }
   int getXPToNextLevel() const { return m_xpToNextLevel; }
+
+  // Sort Rappel (B)
+  void startRecall();
+  bool isRecalling() const { return m_isRecalling; }
 
 private:
   std::vector<ItemTemplate> m_inventory; // Added inventory member
@@ -105,4 +113,9 @@ private:
 
   // (Optionnel) Pour le débogage : afficher le chemin recalculé
   std::vector<sf::CircleShape> m_debugPathShapes;
+
+  // Variables du Rappel
+  bool m_isRecalling = false;
+  float m_recallTimer = 0.0f;
+  static constexpr float RECALL_DURATION = 8.0f;
 };

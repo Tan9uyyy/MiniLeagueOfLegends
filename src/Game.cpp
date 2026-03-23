@@ -157,6 +157,10 @@ void Game::processEvents() {
       if (keyPressed->code == sf::Keyboard::Key::L && m_champion)
         m_champion->debugLevelUp();
 
+      // Rappel (B)
+      if (keyPressed->code == sf::Keyboard::Key::B && m_champion)
+        m_champion->startRecall();
+
       // Sorts : Ctrl+Touche = upgrade, Touche seule = cast
       if (m_champion) {
         bool ctrl = keyPressed->control;

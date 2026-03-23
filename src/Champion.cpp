@@ -25,6 +25,12 @@ Champion::Champion(sf::Vector2f startPosition, const Map &map, Team team)
 }
 
 void Champion::setTargetPosition(sf::Vector2f target) {
+  // Interrompre le rappel si on bouge
+  if (m_isRecalling) {
+    m_isRecalling = false;
+    std::cout << "Rappel interrompu (deplacement)" << std::endl;
+  }
+
   // Si on clique au sol (appel normal depuis main.cpp), on annule la cible
   // d'attaque
   m_target = nullptr;
@@ -52,6 +58,20 @@ void Champion::setTargetPosition(sf::Vector2f target) {
 }
 
 void Champion::update(float deltaTime) {
+  // Gestion du rappel
+  if (m_isRecalling) {
+    m_recallTimer -= deltaTime;
+    if (m_recallTimer <= 0.0f) {
+      m_isRecalling = false;
+      m_shape.setPosition(m_map.getSpawnPosition(getTeam()));
+      // Reset path/target to be safe
+      m_path.clear();
+      m_isMovingToTarget = false;
+      m_target = nullptr;
+      std::cout << "Rappel termine : retour a la base" << std::endl;
+    }
+  }
+
   // Gestion du chronomètre et de l'or
   m_matchTime += deltaTime;
 
@@ -197,9 +217,32 @@ void Champion::draw(sf::RenderWindow &window) {
 
   // Dessiner la propre barre de vie du champion
   drawHealthBar(window, getPosition(), 40.0f, 5.0f);
+
+  // Dessiner la barre de progression du rappel
+  if (m_isRecalling) {
+    float progress = 1.0f - (m_recallTimer / RECALL_DURATION); // 0 à 1
+    float barWidth = 50.0f;
+    float barHeight = 4.0f;
+    sf::Vector2f pos = getPosition();
+    
+    sf::RectangleShape bgBar(sf::Vector2f(barWidth, barHeight));
+    bgBar.setFillColor(sf::Color(0, 0, 0, 150));
+    bgBar.setPosition({pos.x - barWidth / 2.0f, pos.y - 30.0f});
+
+    sf::RectangleShape progBar(sf::Vector2f(barWidth * progress, barHeight));
+    progBar.setFillColor(sf::Color(0, 150, 255)); // Bleu clair
+    progBar.setPosition({pos.x - barWidth / 2.0f, pos.y - 30.0f});
+
+    window.draw(bgBar);
+    window.draw(progBar);
+  }
 }
 
 sf::Vector2f Champion::getPosition() const { return m_shape.getPosition(); }
+
+bool Champion::canShop() const {
+  return m_map.isInSpawnArea(getPosition(), getTeam());
+}
 
 bool Champion::hasFinalItem(int itemId) const {
     for (const auto& item : m_inventory) {
@@ -257,6 +300,31 @@ bool Champion::sellItem(int inventoryIndex) {
     return true;
 }
 
+void Champion::takeDamage(float amount) {
+    CombatEntity::takeDamage(amount);
+    
+    // Interrompre le rappel si on subit des dégâts (uniquement si le montant est > 0 pour être sûr)
+    if (m_isRecalling && amount > 0.0f) {
+        m_isRecalling = false;
+        std::cout << "Rappel interrompu (degats subis) !" << std::endl;
+    }
+}
+
+void Champion::startRecall() {
+    if (m_isRecalling) return; // Déjà en cours
+    
+    m_isRecalling = true;
+    m_recallTimer = RECALL_DURATION;
+    
+    // Annuler les actions en cours
+    m_path.clear();
+    m_isMovingToTarget = false;
+    m_target = nullptr;
+    m_isAttacking = false;
+    
+    std::cout << "Canalisation du Rappel (8s)..." << std::endl;
+}
+
 // --- Système de Sorts et Niveaux ---
 
 void Champion::gainXP(int amount) {
@@ -305,6 +373,13 @@ bool Champion::upgradeSpell(int spellIndex) {
 
 bool Champion::castSpell(int spellIndex) {
     if (spellIndex < 0 || spellIndex >= 4) return false;
+    
+    // Interrompre le rappel si on lance un sort
+    if (m_isRecalling) {
+        m_isRecalling = false;
+        std::cout << "Rappel interrompu (lancement d'un sort) !" << std::endl;
+    }
+
     Spell& spell = m_spells[spellIndex];
     if (!spell.isReady()) return false;
     if (m_currentMana < spell.getManaCost()) return false;
