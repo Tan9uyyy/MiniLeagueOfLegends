@@ -61,3 +61,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 set_target_properties(${PROJECT_NAME} PROPERTIES 
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
+
+# 6. Copier le dossier assets à côté de l'exécutable
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets 
+     DESTINATION ${CMAKE_BINARY_DIR}/bin
+)
