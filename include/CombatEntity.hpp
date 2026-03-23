@@ -23,6 +23,9 @@ public:
       m_currentHealth = 0.0f;
   }
 
+  void setHealth(float hp) { m_currentHealth = hp; }
+  void setMaxHealth(float maxHp) { m_maxHealth = maxHp; }
+
   // Obligatoire pour pouvoir cliquer sur une entité
   virtual sf::FloatRect getBounds() const override = 0;
 

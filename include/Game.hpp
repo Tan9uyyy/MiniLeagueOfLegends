@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include <vector>
+#include <cstdint>
 
 #include "Champion.hpp"
 #include "Entity.hpp"
@@ -12,6 +13,7 @@
 #include "SettingsUI.hpp"
 #include "ShopUI.hpp"
 #include "UIWindow.hpp"
+#include <SFML/Network.hpp>
 
 class Game {
 public:
@@ -24,9 +26,17 @@ private:
   void render();
   void initWorld();
   void initViews();
+  void initNetwork();
+  void processNetwork();
 
   // Factorise l'interception des événements souris par les fenêtres UI
   bool dispatchMouseEventToWindows(const sf::Event& event);
+
+  // Méthodes utilitaires pour le réseau
+  void sendPacket(sf::Packet& packet);
+  void sendMove(float x, float y);
+  void sendAttack(uint32_t targetId);
+  void sendSpell(std::uint8_t spellIndex);
 
 private:
   sf::RenderWindow m_window;
@@ -48,4 +58,7 @@ private:
   std::vector<UIWindow *> m_uiWindows;
 
   Renderer m_renderer;
+
+  sf::UdpSocket m_socket;
+  uint32_t m_localChampionId = 0;
 };

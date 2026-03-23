@@ -1,7 +1,8 @@
-CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Game.cpp \
+CMakeFiles/MiniLeagueOfLegendsServer.dir/src/ClickIndicator.cpp.o: \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Game.hpp \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -273,63 +274,4 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/local/include/SFML/System/FileInputStream.hpp \
  /usr/local/include/SFML/System/InputStream.hpp \
  /usr/local/include/SFML/System/MemoryInputStream.hpp \
- /usr/local/include/SFML/System/Sleep.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Champion.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Item.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Spell.hpp \
- /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Renderer.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
- /usr/local/include/SFML/Network.hpp \
- /usr/local/include/SFML/Network/Ftp.hpp \
- /usr/local/include/SFML/Network/Export.hpp \
- /usr/local/include/SFML/Network/TcpSocket.hpp \
- /usr/local/include/SFML/Network/Socket.hpp \
- /usr/local/include/SFML/Network/SocketHandle.hpp \
- /usr/local/include/SFML/Network/Http.hpp \
- /usr/local/include/SFML/Network/IpAddress.hpp /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/local/include/SFML/Network/Packet.hpp \
- /usr/local/include/SFML/Network/SocketSelector.hpp \
- /usr/local/include/SFML/Network/TcpListener.hpp \
- /usr/local/include/SFML/Network/UdpSocket.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Nexus.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Turret.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/NetworkMessages.hpp \
- /usr/include/c++/13/iostream
+ /usr/local/include/SFML/System/Sleep.hpp

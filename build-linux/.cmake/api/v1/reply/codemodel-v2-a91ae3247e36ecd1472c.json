@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "MiniLeagueOfLegends",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MiniLeagueOfLegends::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MiniLeagueOfLegends-84b5f818d8f56ca662a2.json",
+					"jsonFile" : "target-MiniLeagueOfLegends-058ccd3d7b73fc01f402.json",
 					"name" : "MiniLeagueOfLegends",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MiniLeagueOfLegendsServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MiniLeagueOfLegendsServer-8e8dbb6d523549aa1352.json",
+					"name" : "MiniLeagueOfLegendsServer",
 					"projectIndex" : 0
 				}
 			]

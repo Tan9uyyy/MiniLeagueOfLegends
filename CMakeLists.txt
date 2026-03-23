@@ -12,18 +12,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Recherche de SFML
-find_package(SFML 3 COMPONENTS Graphics Window System Audio REQUIRED)
+find_package(SFML 3 COMPONENTS Graphics Window System Audio Network REQUIRED)
 
-# Liste explicite des fichiers sources (La bonne pratique en CMake)
-set(SRC_FILES
-    src/main.cpp
-    src/Game.cpp
+# Liste explicite des fichiers sources partagés
+set(SHARED_SRC_FILES
     src/Champion.cpp
     src/Map.cpp
     src/Pathfinder.cpp
     src/ClickIndicator.cpp
     src/Nexus.cpp
     src/Turret.cpp
+)
+
+# Fichiers sources spécifiques au client
+set(CLIENT_SRC_FILES
+    src/main.cpp
+    src/Game.cpp
     src/HUD/HUD.cpp
     src/HUD/HUDBar.cpp
     src/HUD/HUDStats.cpp
@@ -36,10 +40,10 @@ set(SRC_FILES
     src/Renderer.cpp
 )
 
-# 1. Création de la cible principale (l'exécutable)
-add_executable(${PROJECT_NAME} ${SRC_FILES})
+# 1. Création de la cible principale (le client)
+add_executable(${PROJECT_NAME} ${CLIENT_SRC_FILES} ${SHARED_SRC_FILES})
 
-# 2. Ajout du dossier 'include' uniquement à cette cible
+# 2. Ajout du dossier 'include'
 target_include_directories(${PROJECT_NAME} PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
@@ -55,12 +59,40 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     SFML::Window 
     SFML::System 
     SFML::Audio
+    SFML::Network
 )
 
 # 5. Définition du dossier de sortie de l'exécutable
 set_target_properties(${PROJECT_NAME} PROPERTIES 
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
+
+# --- CIBLE SERVEUR ---
+set(SERVER_SRC_FILES
+    src/server/ServerMain.cpp
+    src/server/ServerGame.cpp
+)
+
+add_executable(${PROJECT_NAME}Server ${SERVER_SRC_FILES} ${SHARED_SRC_FILES})
+
+target_include_directories(${PROJECT_NAME}Server PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    target_compile_options(${PROJECT_NAME}Server PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+target_link_libraries(${PROJECT_NAME}Server PRIVATE
+    SFML::System
+    SFML::Network
+    SFML::Graphics
+)
+
+set_target_properties(${PROJECT_NAME}Server PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+
 
 # 6. Copier le dossier assets à côté de l'exécutable
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets 

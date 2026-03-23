@@ -27,7 +27,9 @@ public:
 
   // Retourne la position actuelle du champion pour que la caméra puisse le
   // suivre
-  sf::Vector2f getPosition() const;
+  sf::Vector2f getPosition() const override;
+  void setPosition(sf::Vector2f pos) override;
+
   sf::FloatRect getBounds() const override { return m_shape.getGlobalBounds(); }
 
   // Définir une cible à attaquer
@@ -48,6 +50,14 @@ public:
   float getAttackDamage() const { return m_attackDamage; }
   float getAttackSpeed() const { return m_attackSpeed; }
   float getAttackRange() const { return m_attackRange; }
+
+  // Setters pour synchronisation Réseau
+  void setGold(float gold) { m_gold = gold; }
+  void setMana(float mana) { m_currentMana = mana; }
+  void setMaxMana(float maxMana) { m_maxMana = maxMana; }
+  void setIsRecalling(bool r) { m_isRecalling = r; }
+  void setRecallTimer(float t) { m_recallTimer = t; }
+  float getRecallTimer() const { return m_recallTimer; }
 
   // Système de Sorts et Niveaux
   int getLevel() const { return m_level; }

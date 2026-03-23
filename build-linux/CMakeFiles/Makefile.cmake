@@ -16,6 +16,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake"
   "/usr/local/lib/cmake/SFML/SFMLGraphicsSharedTargets-release.cmake"
   "/usr/local/lib/cmake/SFML/SFMLGraphicsSharedTargets.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLNetworkSharedTargets-release.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLNetworkSharedTargets.cmake"
   "/usr/local/lib/cmake/SFML/SFMLSystemSharedTargets-release.cmake"
   "/usr/local/lib/cmake/SFML/SFMLSystemSharedTargets.cmake"
   "/usr/local/lib/cmake/SFML/SFMLWindowSharedTargets-release.cmake"
@@ -51,4 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MiniLeagueOfLegends.dir/DependInfo.cmake"
+  "CMakeFiles/MiniLeagueOfLegendsServer.dir/DependInfo.cmake"
   )

@@ -126,6 +126,14 @@
 		{
 			"isExternal" : true,
 			"path" : "/usr/local/lib/cmake/SFML/SFMLGraphicsSharedTargets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/SFML/SFMLNetworkSharedTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/lib/cmake/SFML/SFMLNetworkSharedTargets-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

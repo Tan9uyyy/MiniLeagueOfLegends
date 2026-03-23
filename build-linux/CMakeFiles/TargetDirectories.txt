@@ -1,3 +1,4 @@
 /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux/CMakeFiles/MiniLeagueOfLegends.dir
+/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux/CMakeFiles/MiniLeagueOfLegendsServer.dir
 /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux/CMakeFiles/edit_cache.dir
 /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux/CMakeFiles/rebuild_cache.dir

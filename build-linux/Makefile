@@ -129,12 +129,26 @@ MiniLeagueOfLegends/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/build
 .PHONY : MiniLeagueOfLegends/fast
 
+#=============================================================================
+# Target rules for targets named MiniLeagueOfLegendsServer
+
+# Build rule for target.
+MiniLeagueOfLegendsServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MiniLeagueOfLegendsServer
+.PHONY : MiniLeagueOfLegendsServer
+
+# fast build rule for target.
+MiniLeagueOfLegendsServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/build
+.PHONY : MiniLeagueOfLegendsServer/fast
+
 src/Champion.o: src/Champion.cpp.o
 .PHONY : src/Champion.o
 
 # target to build an object file
 src/Champion.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Champion.cpp.o
 .PHONY : src/Champion.cpp.o
 
 src/Champion.i: src/Champion.cpp.i
@@ -143,6 +157,7 @@ src/Champion.i: src/Champion.cpp.i
 # target to preprocess a source file
 src/Champion.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Champion.cpp.i
 .PHONY : src/Champion.cpp.i
 
 src/Champion.s: src/Champion.cpp.s
@@ -151,6 +166,7 @@ src/Champion.s: src/Champion.cpp.s
 # target to generate assembly for a file
 src/Champion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Champion.cpp.s
 .PHONY : src/Champion.cpp.s
 
 src/ClickIndicator.o: src/ClickIndicator.cpp.o
@@ -159,6 +175,7 @@ src/ClickIndicator.o: src/ClickIndicator.cpp.o
 # target to build an object file
 src/ClickIndicator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/ClickIndicator.cpp.o
 .PHONY : src/ClickIndicator.cpp.o
 
 src/ClickIndicator.i: src/ClickIndicator.cpp.i
@@ -167,6 +184,7 @@ src/ClickIndicator.i: src/ClickIndicator.cpp.i
 # target to preprocess a source file
 src/ClickIndicator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/ClickIndicator.cpp.i
 .PHONY : src/ClickIndicator.cpp.i
 
 src/ClickIndicator.s: src/ClickIndicator.cpp.s
@@ -175,6 +193,7 @@ src/ClickIndicator.s: src/ClickIndicator.cpp.s
 # target to generate assembly for a file
 src/ClickIndicator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/ClickIndicator.cpp.s
 .PHONY : src/ClickIndicator.cpp.s
 
 src/Game.o: src/Game.cpp.o
@@ -351,6 +370,7 @@ src/Map.o: src/Map.cpp.o
 # target to build an object file
 src/Map.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.o
 .PHONY : src/Map.cpp.o
 
 src/Map.i: src/Map.cpp.i
@@ -359,6 +379,7 @@ src/Map.i: src/Map.cpp.i
 # target to preprocess a source file
 src/Map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.i
 .PHONY : src/Map.cpp.i
 
 src/Map.s: src/Map.cpp.s
@@ -367,6 +388,7 @@ src/Map.s: src/Map.cpp.s
 # target to generate assembly for a file
 src/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
 
 src/Nexus.o: src/Nexus.cpp.o
@@ -375,6 +397,7 @@ src/Nexus.o: src/Nexus.cpp.o
 # target to build an object file
 src/Nexus.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Nexus.cpp.o
 .PHONY : src/Nexus.cpp.o
 
 src/Nexus.i: src/Nexus.cpp.i
@@ -383,6 +406,7 @@ src/Nexus.i: src/Nexus.cpp.i
 # target to preprocess a source file
 src/Nexus.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Nexus.cpp.i
 .PHONY : src/Nexus.cpp.i
 
 src/Nexus.s: src/Nexus.cpp.s
@@ -391,6 +415,7 @@ src/Nexus.s: src/Nexus.cpp.s
 # target to generate assembly for a file
 src/Nexus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Nexus.cpp.s
 .PHONY : src/Nexus.cpp.s
 
 src/Pathfinder.o: src/Pathfinder.cpp.o
@@ -399,6 +424,7 @@ src/Pathfinder.o: src/Pathfinder.cpp.o
 # target to build an object file
 src/Pathfinder.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Pathfinder.cpp.o
 .PHONY : src/Pathfinder.cpp.o
 
 src/Pathfinder.i: src/Pathfinder.cpp.i
@@ -407,6 +433,7 @@ src/Pathfinder.i: src/Pathfinder.cpp.i
 # target to preprocess a source file
 src/Pathfinder.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Pathfinder.cpp.i
 .PHONY : src/Pathfinder.cpp.i
 
 src/Pathfinder.s: src/Pathfinder.cpp.s
@@ -415,6 +442,7 @@ src/Pathfinder.s: src/Pathfinder.cpp.s
 # target to generate assembly for a file
 src/Pathfinder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Pathfinder.cpp.s
 .PHONY : src/Pathfinder.cpp.s
 
 src/Renderer.o: src/Renderer.cpp.o
@@ -495,6 +523,7 @@ src/Turret.o: src/Turret.cpp.o
 # target to build an object file
 src/Turret.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Turret.cpp.o
 .PHONY : src/Turret.cpp.o
 
 src/Turret.i: src/Turret.cpp.i
@@ -503,6 +532,7 @@ src/Turret.i: src/Turret.cpp.i
 # target to preprocess a source file
 src/Turret.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Turret.cpp.i
 .PHONY : src/Turret.cpp.i
 
 src/Turret.s: src/Turret.cpp.s
@@ -511,6 +541,7 @@ src/Turret.s: src/Turret.cpp.s
 # target to generate assembly for a file
 src/Turret.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Turret.cpp.s
 .PHONY : src/Turret.cpp.s
 
 src/UIWindow.o: src/UIWindow.cpp.o
@@ -561,6 +592,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegends.dir/build.make CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/server/ServerGame.o: src/server/ServerGame.cpp.o
+.PHONY : src/server/ServerGame.o
+
+# target to build an object file
+src/server/ServerGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.o
+.PHONY : src/server/ServerGame.cpp.o
+
+src/server/ServerGame.i: src/server/ServerGame.cpp.i
+.PHONY : src/server/ServerGame.i
+
+# target to preprocess a source file
+src/server/ServerGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.i
+.PHONY : src/server/ServerGame.cpp.i
+
+src/server/ServerGame.s: src/server/ServerGame.cpp.s
+.PHONY : src/server/ServerGame.s
+
+# target to generate assembly for a file
+src/server/ServerGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.s
+.PHONY : src/server/ServerGame.cpp.s
+
+src/server/ServerMain.o: src/server/ServerMain.cpp.o
+.PHONY : src/server/ServerMain.o
+
+# target to build an object file
+src/server/ServerMain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerMain.cpp.o
+.PHONY : src/server/ServerMain.cpp.o
+
+src/server/ServerMain.i: src/server/ServerMain.cpp.i
+.PHONY : src/server/ServerMain.i
+
+# target to preprocess a source file
+src/server/ServerMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerMain.cpp.i
+.PHONY : src/server/ServerMain.cpp.i
+
+src/server/ServerMain.s: src/server/ServerMain.cpp.s
+.PHONY : src/server/ServerMain.s
+
+# target to generate assembly for a file
+src/server/ServerMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniLeagueOfLegendsServer.dir/build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerMain.cpp.s
+.PHONY : src/server/ServerMain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -570,6 +649,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MiniLeagueOfLegends"
+	@echo "... MiniLeagueOfLegendsServer"
 	@echo "... src/Champion.o"
 	@echo "... src/Champion.i"
 	@echo "... src/Champion.s"
@@ -624,6 +704,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/server/ServerGame.o"
+	@echo "... src/server/ServerGame.i"
+	@echo "... src/server/ServerGame.s"
+	@echo "... src/server/ServerMain.o"
+	@echo "... src/server/ServerMain.i"
+	@echo "... src/server/ServerMain.s"
 .PHONY : help
 
 

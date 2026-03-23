@@ -17,4 +17,15 @@ public:
 
     // Obtenir la zone de collision/clic de l'entité
     virtual sf::FloatRect getBounds() const = 0;
+
+    // Récupérer et définir la position (utilisé par le réseau)
+    virtual sf::Vector2f getPosition() const { return {0.0f, 0.0f}; }
+    virtual void setPosition(sf::Vector2f /*pos*/) {}
+
+    // Réseau
+    uint32_t getNetworkId() const { return m_networkId; }
+    void setNetworkId(uint32_t id) { m_networkId = id; }
+
+protected:
+    uint32_t m_networkId = 0;
 };

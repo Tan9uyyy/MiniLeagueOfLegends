@@ -1,14 +1,16 @@
-CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Game.cpp \
+CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerMain.cpp.o: \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/server/ServerMain.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Game.hpp \
- /usr/local/include/SFML/Graphics.hpp \
- /usr/local/include/SFML/Graphics/BlendMode.hpp \
- /usr/local/include/SFML/Graphics/Export.hpp \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/server/ServerGame.hpp \
+ /usr/local/include/SFML/Network.hpp \
+ /usr/local/include/SFML/Network/Ftp.hpp \
+ /usr/local/include/SFML/Network/Export.hpp \
  /usr/local/include/SFML/Config.hpp \
- /usr/local/include/SFML/Graphics/CircleShape.hpp \
- /usr/local/include/SFML/Graphics/Shape.hpp \
- /usr/local/include/SFML/Graphics/Color.hpp /usr/include/c++/13/cstdint \
+ /usr/local/include/SFML/Network/TcpSocket.hpp \
+ /usr/local/include/SFML/Network/Socket.hpp \
+ /usr/local/include/SFML/Network/SocketHandle.hpp \
+ /usr/local/include/SFML/System/Time.hpp /usr/include/c++/13/chrono \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,7 +21,9 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/type_traits \
+ /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -29,21 +33,32 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/local/include/SFML/Graphics/Color.inl \
- /usr/local/include/SFML/Graphics/Drawable.hpp \
- /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
- /usr/local/include/SFML/Graphics/Rect.hpp \
- /usr/local/include/SFML/System/Vector2.hpp \
- /usr/local/include/SFML/System/Export.hpp \
- /usr/local/include/SFML/System/Angle.hpp \
- /usr/local/include/SFML/System/Angle.inl /usr/include/c++/13/cassert \
- /usr/include/assert.h /usr/local/include/SFML/System/Vector2.inl \
- /usr/include/c++/13/optional /usr/include/c++/13/type_traits \
+ /usr/include/c++/13/limits /usr/include/c++/13/ctime /usr/include/time.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/ext/numeric_traits.h \
+ /usr/include/c++/13/bits/cpp_type_traits.h \
+ /usr/include/c++/13/ext/type_traits.h \
+ /usr/local/include/SFML/System/Time.inl /usr/include/c++/13/cassert \
+ /usr/include/assert.h /usr/include/c++/13/optional \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception.h \
  /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/exception_defines.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/hash_bytes.h \
  /usr/include/c++/13/new /usr/include/c++/13/bits/move.h \
  /usr/include/c++/13/bits/nested_exception.h \
@@ -55,28 +70,13 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/13/bits/concept_check.h \
  /usr/include/c++/13/debug/assertions.h \
- /usr/include/c++/13/bits/utility.h \
- /usr/local/include/SFML/Graphics/Rect.inl \
- /usr/local/include/SFML/Graphics/RenderStates.hpp \
- /usr/local/include/SFML/Graphics/CoordinateType.hpp \
- /usr/local/include/SFML/Graphics/StencilMode.hpp \
- /usr/local/include/SFML/Graphics/Transform.hpp /usr/include/c++/13/array \
- /usr/include/c++/13/compare /usr/include/c++/13/bits/functexcept.h \
+ /usr/include/c++/13/bits/utility.h /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_algobase.h \
- /usr/include/c++/13/bits/cpp_type_traits.h \
- /usr/include/c++/13/ext/type_traits.h \
- /usr/include/c++/13/ext/numeric_traits.h \
+ /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/stl_pair.h \
  /usr/include/c++/13/bits/stl_iterator.h \
  /usr/include/c++/13/bits/ptr_traits.h /usr/include/c++/13/debug/debug.h \
  /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
- /usr/include/c++/13/bits/range_access.h \
- /usr/local/include/SFML/Graphics/Transform.inl \
- /usr/include/c++/13/cstddef \
- /usr/local/include/SFML/Graphics/Transformable.hpp \
- /usr/local/include/SFML/Graphics/VertexArray.hpp \
- /usr/local/include/SFML/Graphics/Vertex.hpp /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
  /usr/include/c++/13/bits/new_allocator.h \
@@ -89,23 +89,22 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/refwrap.h /usr/include/c++/13/bits/invoke.h \
  /usr/include/c++/13/bits/stl_function.h \
  /usr/include/c++/13/backward/binders.h \
+ /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /usr/include/c++/13/bits/memory_resource.h \
+ /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/local/include/SFML/Graphics/ConvexShape.hpp \
- /usr/local/include/SFML/Graphics/Font.hpp \
- /usr/local/include/SFML/Graphics/Glyph.hpp \
- /usr/local/include/SFML/Graphics/Texture.hpp \
- /usr/local/include/SFML/Window/GlResource.hpp \
- /usr/local/include/SFML/Window/Export.hpp /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h /usr/include/c++/13/iosfwd \
- /usr/include/c++/13/bits/stringfwd.h /usr/include/c++/13/bits/postypes.h \
- /usr/include/c++/13/cwchar /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
+ /usr/include/c++/13/system_error \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/c++/13/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -113,56 +112,6 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/ext/atomicity.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
- /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/filesystem \
- /usr/include/c++/13/bits/fs_fwd.h /usr/include/c++/13/system_error \
- /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
- /usr/include/c++/13/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/stdexcept /usr/include/c++/13/string \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
@@ -182,7 +131,14 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -191,11 +147,20 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_classes.h \
+ /usr/include/c++/13/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
  /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
@@ -218,13 +183,83 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/codecvt \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
+ /usr/local/include/SFML/Network/Http.hpp \
+ /usr/local/include/SFML/Network/IpAddress.hpp /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h \
+ /usr/local/include/SFML/Network/Packet.hpp \
+ /usr/local/include/SFML/Network/SocketSelector.hpp \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h \
+ /usr/local/include/SFML/Network/TcpListener.hpp \
+ /usr/local/include/SFML/Network/UdpSocket.hpp \
+ /usr/local/include/SFML/System.hpp \
+ /usr/local/include/SFML/System/Angle.hpp \
+ /usr/local/include/SFML/System/Angle.inl \
+ /usr/local/include/SFML/System/Clock.hpp \
+ /usr/local/include/SFML/System/Export.hpp \
+ /usr/local/include/SFML/System/Err.hpp \
+ /usr/local/include/SFML/System/Exception.hpp \
+ /usr/local/include/SFML/System/FileInputStream.hpp \
+ /usr/local/include/SFML/System/InputStream.hpp \
+ /usr/local/include/SFML/System/MemoryInputStream.hpp \
+ /usr/local/include/SFML/System/Sleep.hpp \
+ /usr/local/include/SFML/System/String.hpp \
+ /usr/local/include/SFML/System/Utf.hpp /usr/include/c++/13/array \
+ /usr/include/c++/13/compare /usr/local/include/SFML/System/Utf.inl \
+ /usr/local/include/SFML/System/String.inl /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/local/include/SFML/System/Vector2.hpp \
+ /usr/local/include/SFML/System/Vector2.inl \
+ /usr/local/include/SFML/System/Vector3.hpp \
+ /usr/local/include/SFML/System/Vector3.inl \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /usr/local/include/SFML/Graphics.hpp \
+ /usr/local/include/SFML/Graphics/BlendMode.hpp \
+ /usr/local/include/SFML/Graphics/Export.hpp \
+ /usr/local/include/SFML/Graphics/CircleShape.hpp \
+ /usr/local/include/SFML/Graphics/Shape.hpp \
+ /usr/local/include/SFML/Graphics/Color.hpp \
+ /usr/local/include/SFML/Graphics/Color.inl \
+ /usr/local/include/SFML/Graphics/Drawable.hpp \
+ /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/local/include/SFML/Graphics/Rect.hpp \
+ /usr/local/include/SFML/Graphics/Rect.inl \
+ /usr/local/include/SFML/Graphics/RenderStates.hpp \
+ /usr/local/include/SFML/Graphics/CoordinateType.hpp \
+ /usr/local/include/SFML/Graphics/StencilMode.hpp \
+ /usr/local/include/SFML/Graphics/Transform.hpp \
+ /usr/local/include/SFML/Graphics/Transform.inl \
+ /usr/local/include/SFML/Graphics/Transformable.hpp \
+ /usr/local/include/SFML/Graphics/VertexArray.hpp \
+ /usr/local/include/SFML/Graphics/Vertex.hpp \
+ /usr/local/include/SFML/Graphics/ConvexShape.hpp \
+ /usr/local/include/SFML/Graphics/Font.hpp \
+ /usr/local/include/SFML/Graphics/Glyph.hpp \
+ /usr/local/include/SFML/Graphics/Texture.hpp \
+ /usr/local/include/SFML/Window/GlResource.hpp \
+ /usr/local/include/SFML/Window/Export.hpp \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h \
  /usr/local/include/SFML/Graphics/Image.hpp \
  /usr/local/include/SFML/Graphics/RectangleShape.hpp \
  /usr/local/include/SFML/Graphics/RenderTarget.hpp \
@@ -238,24 +273,14 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/local/include/SFML/Window/Vulkan.hpp \
  /usr/local/include/SFML/Window/WindowEnums.hpp \
  /usr/local/include/SFML/Window/WindowHandle.hpp \
- /usr/local/include/SFML/System/Time.hpp /usr/include/c++/13/chrono \
- /usr/local/include/SFML/System/Time.inl \
  /usr/local/include/SFML/Window/WindowBase.inl \
  /usr/local/include/SFML/Window/Event.hpp \
  /usr/local/include/SFML/Window/Joystick.hpp \
- /usr/local/include/SFML/System/String.hpp \
- /usr/local/include/SFML/System/Utf.hpp \
- /usr/local/include/SFML/System/Utf.inl \
- /usr/local/include/SFML/System/String.inl /usr/include/c++/13/iterator \
- /usr/include/c++/13/bits/stream_iterator.h \
  /usr/local/include/SFML/Window/Keyboard.hpp \
  /usr/local/include/SFML/Window/Mouse.hpp \
- /usr/local/include/SFML/Window/Sensor.hpp \
- /usr/local/include/SFML/System/Vector3.hpp \
- /usr/local/include/SFML/System/Vector3.inl /usr/include/c++/13/variant \
+ /usr/local/include/SFML/Window/Sensor.hpp /usr/include/c++/13/variant \
  /usr/local/include/SFML/Window/Event.inl /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /usr/local/include/SFML/System/Clock.hpp \
  /usr/local/include/SFML/Graphics/Shader.hpp \
  /usr/local/include/SFML/Graphics/Glsl.hpp \
  /usr/local/include/SFML/Graphics/Glsl.inl \
@@ -267,19 +292,11 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/local/include/SFML/Window/Context.hpp \
  /usr/local/include/SFML/Window/Cursor.hpp \
  /usr/local/include/SFML/Window/Touch.hpp \
- /usr/local/include/SFML/System.hpp \
- /usr/local/include/SFML/System/Err.hpp \
- /usr/local/include/SFML/System/Exception.hpp \
- /usr/local/include/SFML/System/FileInputStream.hpp \
- /usr/local/include/SFML/System/InputStream.hpp \
- /usr/local/include/SFML/System/MemoryInputStream.hpp \
- /usr/local/include/SFML/System/Sleep.hpp \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Champion.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Item.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Spell.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -302,34 +319,4 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Renderer.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
- /usr/local/include/SFML/Network.hpp \
- /usr/local/include/SFML/Network/Ftp.hpp \
- /usr/local/include/SFML/Network/Export.hpp \
- /usr/local/include/SFML/Network/TcpSocket.hpp \
- /usr/local/include/SFML/Network/Socket.hpp \
- /usr/local/include/SFML/Network/SocketHandle.hpp \
- /usr/local/include/SFML/Network/Http.hpp \
- /usr/local/include/SFML/Network/IpAddress.hpp /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/local/include/SFML/Network/Packet.hpp \
- /usr/local/include/SFML/Network/SocketSelector.hpp \
- /usr/local/include/SFML/Network/TcpListener.hpp \
- /usr/local/include/SFML/Network/UdpSocket.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Nexus.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Turret.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/NetworkMessages.hpp \
- /usr/include/c++/13/iostream
+ /usr/include/c++/13/tr1/riemann_zeta.tcc

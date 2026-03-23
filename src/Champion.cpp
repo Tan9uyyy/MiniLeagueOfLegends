@@ -239,6 +239,7 @@ void Champion::draw(sf::RenderWindow &window) {
 }
 
 sf::Vector2f Champion::getPosition() const { return m_shape.getPosition(); }
+void Champion::setPosition(sf::Vector2f pos) { m_shape.setPosition(pos); }
 
 bool Champion::canShop() const {
   return m_map.isInSpawnArea(getPosition(), getTeam());

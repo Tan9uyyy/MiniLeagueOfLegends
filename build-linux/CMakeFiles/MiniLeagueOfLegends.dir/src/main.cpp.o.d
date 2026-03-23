@@ -313,4 +313,18 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.o: \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Renderer.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ShopUI.hpp
+ /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
+ /usr/local/include/SFML/Network.hpp \
+ /usr/local/include/SFML/Network/Ftp.hpp \
+ /usr/local/include/SFML/Network/Export.hpp \
+ /usr/local/include/SFML/Network/TcpSocket.hpp \
+ /usr/local/include/SFML/Network/Socket.hpp \
+ /usr/local/include/SFML/Network/SocketHandle.hpp \
+ /usr/local/include/SFML/Network/Http.hpp \
+ /usr/local/include/SFML/Network/IpAddress.hpp /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/local/include/SFML/Network/Packet.hpp \
+ /usr/local/include/SFML/Network/SocketSelector.hpp \
+ /usr/local/include/SFML/Network/TcpListener.hpp \
+ /usr/local/include/SFML/Network/UdpSocket.hpp
