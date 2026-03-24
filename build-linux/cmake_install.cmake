@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends
+# Install script for directory: /home/bouchutt/bouchutt/LeagueOfLegends
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/build-linux/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bouchutt/bouchutt/LeagueOfLegends/build-linux/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

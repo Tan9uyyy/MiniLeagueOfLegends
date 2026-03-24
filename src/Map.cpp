@@ -1,4 +1,5 @@
 #include "Map.hpp"
+#include "Config.hpp"
 #include <cmath>
 #include <algorithm>
 
@@ -9,7 +10,7 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     m_ground.setPosition({0.0f, 0.0f});
 
     // On crée une grille au sol pour mieux se repérer visuellement lors du déplacement
-    float gridSize = 100.0f; // Une ligne tous les 100 pixels
+    float gridSize = Config::Map::GRID_SIZE; // Une ligne tous les X pixels
 
     // Lignes verticales
     for (float x = 0; x <= width; x += gridSize) {
@@ -52,17 +53,17 @@ Map::Map(float width, float height) : m_width(width), m_height(height) {
     m_obstacles.push_back(wall4);
 
     // --- Configuration des zones d'apparition ---
-    float spawnRadius = 400.0f;
+    float spawnRadius = Config::Map::SPAWN_RADIUS;
     m_alliedSpawn.setRadius(spawnRadius);
     m_alliedSpawn.setOrigin({spawnRadius, spawnRadius});
-    m_alliedSpawn.setPosition({1300.0f, 8800.0f}); // Centre = position de départ du champion
+    m_alliedSpawn.setPosition(Config::Map::ALLIED_SPAWN_POS); // Centre = position de départ du champion
     m_alliedSpawn.setFillColor(sf::Color(0, 0, 255, 40)); // Bleu transparent
     m_alliedSpawn.setOutlineThickness(2.0f);
     m_alliedSpawn.setOutlineColor(sf::Color(100, 100, 255, 150));
 
     m_enemySpawn.setRadius(spawnRadius);
     m_enemySpawn.setOrigin({spawnRadius, spawnRadius});
-    m_enemySpawn.setPosition({2600.0f, 7900.0f}); // Derrière le nexus ennemi
+    m_enemySpawn.setPosition(Config::Map::ENEMY_SPAWN_POS); // Derrière le nexus ennemi
     m_enemySpawn.setFillColor(sf::Color(255, 0, 0, 40)); // Rouge transparent
     m_enemySpawn.setOutlineThickness(2.0f);
     m_enemySpawn.setOutlineColor(sf::Color(255, 100, 100, 150));

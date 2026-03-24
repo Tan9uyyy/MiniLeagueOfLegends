@@ -1,9 +1,9 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Nexus.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/Nexus.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Nexus.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Nexus.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -276,4 +276,4 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.o: \
  /usr/local/include/SFML/System/InputStream.hpp \
  /usr/local/include/SFML/System/MemoryInputStream.hpp \
  /usr/local/include/SFML/System/Sleep.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Team.hpp

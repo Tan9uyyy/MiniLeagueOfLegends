@@ -1,4 +1,5 @@
 #include "ServerGame.hpp"
+#include "Config.hpp"
 #include "Nexus.hpp"
 #include "Turret.hpp"
 #include "NetworkMessages.hpp"
@@ -6,28 +7,28 @@
 #include <iostream>
 
 ServerGame::ServerGame() {
-    if (m_socket.bind(54321) != sf::Socket::Status::Done) {
-        std::cerr << "Serveur : Erreur lors du bind sur le port 54321" << std::endl;
+    if (m_socket.bind(Config::Network::SERVER_PORT) != sf::Socket::Status::Done) {
+        std::cerr << "Serveur : Erreur lors du bind sur le port " << Config::Network::SERVER_PORT << std::endl;
     }
     m_socket.setBlocking(false);
     initWorld();
-    std::cout << "Serveur demarre sur le port 54321" << std::endl;
+    std::cout << "Serveur demarre sur le port " << Config::Network::SERVER_PORT << std::endl;
 }
 
 void ServerGame::initWorld() {
-    auto mapPtr = std::make_unique<Map>(10000.0f, 10000.0f);
+    auto mapPtr = std::make_unique<Map>(Config::Game::MAP_WIDTH, Config::Game::MAP_HEIGHT);
     mapPtr->setNetworkId(NetworkIds::MAP);
     m_gameMap = mapPtr.get();
 
     // Nexus Allié
-    auto alliedNexus = std::make_unique<Nexus>(sf::Vector2f(1000.0f, 9000.0f), Team::ALLIED);
+    auto alliedNexus = std::make_unique<Nexus>(Config::Map::ALLIED_NEXUS_POS, Team::ALLIED);
     m_gameMap->addObstacle(alliedNexus->getBounds());
     alliedNexus->setNetworkId(NetworkIds::ALLIED_NEXUS);
     m_entities.push_back(std::move(alliedNexus));
 
     // Tourelles Alliées
-    auto turretA1 = std::make_unique<Turret>(sf::Vector2f(1200.0f, 8500.0f), Team::ALLIED);
-    auto turretA2 = std::make_unique<Turret>(sf::Vector2f(1500.0f, 8800.0f), Team::ALLIED);
+    auto turretA1 = std::make_unique<Turret>(Config::Map::ALLIED_TURRET_1_POS, Team::ALLIED);
+    auto turretA2 = std::make_unique<Turret>(Config::Map::ALLIED_TURRET_2_POS, Team::ALLIED);
     m_gameMap->addObstacle(turretA1->getBounds());
     m_gameMap->addObstacle(turretA2->getBounds());
     turretA1->setNetworkId(NetworkIds::ALLIED_TURRET_1);
@@ -36,14 +37,14 @@ void ServerGame::initWorld() {
     m_entities.push_back(std::move(turretA2));
 
     // Nexus Ennemi
-    auto enemyNexus = std::make_unique<Nexus>(sf::Vector2f(2500.0f, 8000.0f), Team::ENEMY);
+    auto enemyNexus = std::make_unique<Nexus>(Config::Map::ENEMY_NEXUS_POS, Team::ENEMY);
     m_gameMap->addObstacle(enemyNexus->getBounds());
     enemyNexus->setNetworkId(NetworkIds::ENEMY_NEXUS);
     m_entities.push_back(std::move(enemyNexus));
 
     // Tourelles Ennemies
-    auto turretE1 = std::make_unique<Turret>(sf::Vector2f(2200.0f, 8500.0f), Team::ENEMY);
-    auto turretE2 = std::make_unique<Turret>(sf::Vector2f(2500.0f, 8300.0f), Team::ENEMY);
+    auto turretE1 = std::make_unique<Turret>(Config::Map::ENEMY_TURRET_1_POS, Team::ENEMY);
+    auto turretE2 = std::make_unique<Turret>(Config::Map::ENEMY_TURRET_2_POS, Team::ENEMY);
     m_gameMap->addObstacle(turretE1->getBounds());
     m_gameMap->addObstacle(turretE2->getBounds());
     turretE1->setNetworkId(NetworkIds::ENEMY_TURRET_1);
@@ -153,6 +154,19 @@ void ServerGame::processNetwork() {
 void ServerGame::update(float deltaTime) {
     for (auto& entity : m_entities) {
         entity->update(deltaTime);
+
+        if (auto champ = dynamic_cast<Champion*>(entity.get())) {
+            uint32_t targetId;
+            if (champ->popJustAttacked(targetId)) {
+                sf::Packet p;
+                p << MessageType::ATTACK_ANIM << champ->getNetworkId() << targetId;
+                for (const auto& client : m_clients) {
+                    if (client.ip.has_value()) {
+                        (void)m_socket.send(p, client.ip.value(), client.port);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -197,7 +211,7 @@ void ServerGame::broadcastState() {
 void ServerGame::run() {
     sf::Clock clock;
     sf::Clock networkClock;
-    const float NETWORK_TICK_RATE = 1.0f / 30.0f; // 30 paquets par seconde
+    const float NETWORK_TICK_RATE = Config::Network::TICK_RATE;
 
     while (true) {
         float deltaTime = clock.restart().asSeconds();

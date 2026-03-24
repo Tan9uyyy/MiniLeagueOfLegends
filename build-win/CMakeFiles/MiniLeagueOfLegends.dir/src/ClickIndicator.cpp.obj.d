@@ -1,7 +1,7 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\ClickIndicator.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/ClickIndicator.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Entity.hpp \
+ D:\bouchutt\LeagueOfLegends\src\ClickIndicator.cpp \
+ D:/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Entity.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \

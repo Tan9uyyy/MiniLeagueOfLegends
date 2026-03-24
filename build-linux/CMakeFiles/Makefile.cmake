@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/CMakeLists.txt"
+  "/home/bouchutt/bouchutt/LeagueOfLegends/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/usr/local/lib/cmake/SFML/SFMLAudioSharedTargets-release.cmake"

@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Tanguy\MiniLeagueOfLegends
+CMAKE_SOURCE_DIR = D:\bouchutt\LeagueOfLegends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Tanguy\MiniLeagueOfLegends\build-win
+CMAKE_BINARY_DIR = D:\bouchutt\LeagueOfLegends\build-win
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MiniLeagueOfLegends.dir/depend.make
@@ -73,284 +73,278 @@ CMakeFiles/MiniLeagueOfLegends.dir/codegen:
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/main.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: D:/bouchutt/LeagueOfLegends/src/main.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\main.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\main.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\main.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\main.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\main.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\main.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Game.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Game.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Game.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Game.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Game.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Game.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Champion.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Champion.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Champion.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Champion.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Map.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Map.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Map.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Map.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Pathfinder.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Pathfinder.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Pathfinder.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Pathfinder.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/ClickIndicator.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\ClickIndicator.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\ClickIndicator.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\ClickIndicator.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Nexus.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Nexus.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Nexus.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Nexus.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.s
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Turret.cpp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Turret.cpp
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Turret.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.i
-
-CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Turret.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Game.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Game.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUD.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUD.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUD.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUD.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUD.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUD.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUD.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDBar.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUDBar.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDBar.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUDBar.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDBar.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUDBar.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDBar.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDStats.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDStats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUDStats.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDStats.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUDStats.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDStats.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUDStats.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDStats.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDSpells.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDSpells.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUDSpells.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDSpells.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUDSpells.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDSpells.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUDSpells.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDSpells.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDLevel.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDLevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUDLevel.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDLevel.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUDLevel.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDLevel.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUDLevel.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDLevel.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDGold.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj: D:/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDGold.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\HUD\HUDGold.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDGold.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\HUD\HUDGold.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUDGold.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\HUD\HUDGold.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\HUD\HUDGold.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/ShopUI.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: D:/bouchutt/LeagueOfLegends/src/ShopUI.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\ShopUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\ShopUI.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\ShopUI.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\ShopUI.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\ShopUI.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\ShopUI.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\ShopUI.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/SettingsUI.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: D:/bouchutt/LeagueOfLegends/src/SettingsUI.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\SettingsUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\SettingsUI.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\SettingsUI.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\SettingsUI.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\SettingsUI.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\SettingsUI.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\SettingsUI.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/UIWindow.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: D:/bouchutt/LeagueOfLegends/src/UIWindow.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\UIWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\UIWindow.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\UIWindow.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\UIWindow.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\UIWindow.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\UIWindow.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\UIWindow.cpp.s
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
-CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj: C:/Users/Tanguy/MiniLeagueOfLegends/src/Renderer.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Renderer.cpp
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.obj -c C:\Users\Tanguy\MiniLeagueOfLegends\src\Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Renderer.cpp
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Tanguy\MiniLeagueOfLegends\src\Renderer.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.i
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Renderer.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.i
 
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Tanguy\MiniLeagueOfLegends\src\Renderer.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.s
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Renderer.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Renderer.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Champion.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Champion.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Champion.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Champion.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Champion.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Map.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Map.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Map.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Map.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Map.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Pathfinder.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Pathfinder.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Pathfinder.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Pathfinder.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Pathfinder.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: D:/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\ClickIndicator.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\ClickIndicator.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\ClickIndicator.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\ClickIndicator.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Nexus.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Nexus.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Nexus.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Nexus.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Nexus.cpp.s
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/flags.make
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: D:/bouchutt/LeagueOfLegends/src/Turret.cpp
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj: CMakeFiles/MiniLeagueOfLegends.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj -MF CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.obj.d -o CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.obj -c D:\bouchutt\LeagueOfLegends\src\Turret.cpp
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\bouchutt\LeagueOfLegends\src\Turret.cpp > CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.i
+
+CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\bouchutt\LeagueOfLegends\src\Turret.cpp -o CMakeFiles\MiniLeagueOfLegends.dir\src\Turret.cpp.s
 
 # Object files for target MiniLeagueOfLegends
 MiniLeagueOfLegends_OBJECTS = \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj" \
@@ -360,19 +354,19 @@ MiniLeagueOfLegends_OBJECTS = \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj" \
 "CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj" \
-"CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj"
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj" \
+"CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj"
 
 # External object files for target MiniLeagueOfLegends
 MiniLeagueOfLegends_EXTERNAL_OBJECTS =
 
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj
-bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj
@@ -383,15 +377,22 @@ bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.o
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj
+bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/build.make
 bin/MiniLeagueOfLegends.exe: C:/msys64/ucrt64/lib/libsfml-graphics.dll.a
 bin/MiniLeagueOfLegends.exe: C:/msys64/ucrt64/lib/libsfml-window.dll.a
 bin/MiniLeagueOfLegends.exe: C:/msys64/ucrt64/lib/libsfml-audio.dll.a
+bin/MiniLeagueOfLegends.exe: C:/msys64/ucrt64/lib/libsfml-network.dll.a
 bin/MiniLeagueOfLegends.exe: C:/msys64/ucrt64/lib/libsfml-system.dll.a
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/linkLibs.rsp
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/objects1.rsp
 bin/MiniLeagueOfLegends.exe: CMakeFiles/MiniLeagueOfLegends.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable bin\MiniLeagueOfLegends.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable bin\MiniLeagueOfLegends.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MiniLeagueOfLegends.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -403,6 +404,6 @@ CMakeFiles/MiniLeagueOfLegends.dir/clean:
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/clean
 
 CMakeFiles/MiniLeagueOfLegends.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Tanguy\MiniLeagueOfLegends C:\Users\Tanguy\MiniLeagueOfLegends C:\Users\Tanguy\MiniLeagueOfLegends\build-win C:\Users\Tanguy\MiniLeagueOfLegends\build-win C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles\MiniLeagueOfLegends.dir\DependInfo.cmake "--color=$(COLOR)" MiniLeagueOfLegends
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\bouchutt\LeagueOfLegends D:\bouchutt\LeagueOfLegends D:\bouchutt\LeagueOfLegends\build-win D:\bouchutt\LeagueOfLegends\build-win D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles\MiniLeagueOfLegends.dir\DependInfo.cmake "--color=$(COLOR)" MiniLeagueOfLegends
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/depend
 

@@ -32,20 +32,22 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/Tanguy/MiniLeagueOfLegends/CMakeLists.txt"
-  "CMakeFiles/4.3.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.3.0/CMakeRCCompiler.cmake"
-  "CMakeFiles/4.3.0/CMakeSystem.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLAudioSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLAudioSharedTargets.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLConfig.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLConfigVersion.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLGraphicsSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLGraphicsSharedTargets.cmake"
+  "C:/msys64/ucrt64/lib/cmake/SFML/SFMLNetworkSharedTargets-release.cmake"
+  "C:/msys64/ucrt64/lib/cmake/SFML/SFMLNetworkSharedTargets.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLSystemSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLSystemSharedTargets.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLWindowSharedTargets-release.cmake"
   "C:/msys64/ucrt64/lib/cmake/SFML/SFMLWindowSharedTargets.cmake"
+  "D:/bouchutt/LeagueOfLegends/CMakeLists.txt"
+  "CMakeFiles/4.3.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.3.0/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.3.0/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:
@@ -62,4 +64,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MiniLeagueOfLegends.dir/DependInfo.cmake"
+  "CMakeFiles/MiniLeagueOfLegendsServer.dir/DependInfo.cmake"
   )

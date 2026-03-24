@@ -1,7 +1,7 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\ShopUI.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/ShopUI.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/UIWindow.hpp \
+ D:\bouchutt\LeagueOfLegends\src\ShopUI.cpp \
+ D:/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
+ D:/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \
@@ -286,13 +286,14 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj: \
  C:/msys64/ucrt64/include/SFML/System/InputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/MemoryInputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/Sleep.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Champion.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/CombatEntity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Entity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Team.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Item.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Map.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Champion.hpp \
+ D:/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Team.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Item.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Map.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Config.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \

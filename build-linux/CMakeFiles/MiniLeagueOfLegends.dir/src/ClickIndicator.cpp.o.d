@@ -1,8 +1,8 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/ClickIndicator.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \

@@ -1,9 +1,9 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Turret.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/Turret.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Turret.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Turret.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -276,4 +276,4 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.o: \
  /usr/local/include/SFML/System/InputStream.hpp \
  /usr/local/include/SFML/System/MemoryInputStream.hpp \
  /usr/local/include/SFML/System/Sleep.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Team.hpp

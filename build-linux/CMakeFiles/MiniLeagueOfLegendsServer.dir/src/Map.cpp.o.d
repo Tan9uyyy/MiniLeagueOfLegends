@@ -1,8 +1,8 @@
 CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Map.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/Map.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Map.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -275,7 +275,8 @@ CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.o: \
  /usr/local/include/SFML/System/InputStream.hpp \
  /usr/local/include/SFML/System/MemoryInputStream.hpp \
  /usr/local/include/SFML/System/Sleep.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Team.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Config.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

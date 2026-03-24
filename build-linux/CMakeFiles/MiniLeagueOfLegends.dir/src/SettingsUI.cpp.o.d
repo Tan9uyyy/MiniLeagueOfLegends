@@ -1,8 +1,8 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/SettingsUI.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/SettingsUI.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \

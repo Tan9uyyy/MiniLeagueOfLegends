@@ -9,7 +9,8 @@ enum class MessageType : std::uint8_t {
     MOVE,        // Client ordonne un déplacement (clic droit)
     ATTACK,      // Client attaque une entité
     SPELL,       // Client lance un sort
-    STATE        // Serveur envoie les positions de toutes les entités
+    STATE,       // Serveur envoie les positions de toutes les entités
+    ATTACK_ANIM  // Serveur signale qu'une attaque a eu lieu (pour jouer l'animation)
 };
 
 // Surcharge pour sf::Packet avec notre énumération

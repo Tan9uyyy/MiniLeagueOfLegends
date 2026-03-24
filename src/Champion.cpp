@@ -1,12 +1,13 @@
 #include "Champion.hpp"
+#include "Config.hpp"
 #include "Map.hpp"
 #include "Pathfinder.hpp"
 #include <iostream>
 
 Champion::Champion(sf::Vector2f startPosition, const Map &map, Team team)
-    : CombatEntity(team, 1000.0f), m_speed(300.0f), m_isMovingToTarget(false),
+    : CombatEntity(team, 1000.0f), m_speed(Config::Champion::SPEED), m_isMovingToTarget(false),
       m_map(map) {
-  m_shape.setRadius(20.0f);
+  m_shape.setRadius(Config::Champion::RADIUS);
 
   if (team == Team::ALLIED) {
     m_shape.setFillColor(sf::Color::Blue);
@@ -14,7 +15,7 @@ Champion::Champion(sf::Vector2f startPosition, const Map &map, Team team)
     m_shape.setFillColor(sf::Color::Red);
   }
 
-  m_shape.setOrigin({20.0f, 20.0f});
+  m_shape.setOrigin({Config::Champion::RADIUS, Config::Champion::RADIUS});
   m_shape.setPosition(startPosition);
 
   // Initialisation des 4 sorts
@@ -58,6 +59,23 @@ void Champion::setTargetPosition(sf::Vector2f target) {
 }
 
 void Champion::update(float deltaTime) {
+  if (isDead()) {
+    m_target = nullptr;
+    m_path.clear();
+    m_isMovingToTarget = false;
+    m_isRecalling = false;
+    m_isAttacking = false;
+
+    m_respawnTimer -= deltaTime;
+    if (m_respawnTimer <= 0.0f) {
+      m_currentHealth = m_maxHealth;
+      m_currentMana = m_maxMana;
+      setPosition(m_map.getSpawnPosition(getTeam()));
+      std::cout << "Champion a respawn!" << std::endl;
+    }
+    return; // Stop update logic if dead
+  }
+
   // Gestion du rappel
   if (m_isRecalling) {
     m_recallTimer -= deltaTime;
@@ -142,9 +160,11 @@ void Champion::update(float deltaTime) {
           m_target->takeDamage(m_attackDamage);
           m_attackCooldown = 1.0f / m_attackSpeed; // Reset du timer
 
-          // Activer le visuel du laser
+          // Activer le visuel du laser et notifier le serveur
           m_isAttacking = true;
           m_attackVisualTimer = m_attackVisualDuration;
+          m_justAttacked = true;
+          m_justAttackedTargetId = m_target->getNetworkId();
 
           std::cout << "Champion attacks for " << m_attackDamage
                     << " damage! Target HP: " << m_target->getHealth()
@@ -220,7 +240,7 @@ void Champion::draw(sf::RenderWindow &window) {
 
   // Dessiner la barre de progression du rappel
   if (m_isRecalling) {
-    float progress = 1.0f - (m_recallTimer / RECALL_DURATION); // 0 à 1
+    float progress = 1.0f - (m_recallTimer / Config::Champion::RECALL_DURATION); // 0 à 1
     float barWidth = 50.0f;
     float barHeight = 4.0f;
     sf::Vector2f pos = getPosition();
@@ -302,6 +322,7 @@ bool Champion::sellItem(int inventoryIndex) {
 }
 
 void Champion::takeDamage(float amount) {
+    bool wasDead = isDead();
     CombatEntity::takeDamage(amount);
     
     // Interrompre le rappel si on subit des dégâts (uniquement si le montant est > 0 pour être sûr)
@@ -309,13 +330,18 @@ void Champion::takeDamage(float amount) {
         m_isRecalling = false;
         std::cout << "Rappel interrompu (degats subis) !" << std::endl;
     }
+
+    if (!wasDead && isDead()) {
+        m_respawnTimer = RESPAWN_DURATION;
+        std::cout << "Champion est mort ! Respawn dans " << RESPAWN_DURATION << "s..." << std::endl;
+    }
 }
 
 void Champion::startRecall() {
     if (m_isRecalling) return; // Déjà en cours
     
     m_isRecalling = true;
-    m_recallTimer = RECALL_DURATION;
+    m_recallTimer = Config::Champion::RECALL_DURATION;
     
     // Annuler les actions en cours
     m_path.clear();
@@ -329,7 +355,7 @@ void Champion::startRecall() {
 // --- Système de Sorts et Niveaux ---
 
 void Champion::gainXP(int amount) {
-    if (m_level >= 18) return;
+    if (m_level >= Config::Champion::MAX_LEVEL) return;
     m_xp += amount;
     while (m_level < 18 && m_xp >= m_xpToNextLevel) {
         m_xp -= m_xpToNextLevel;
@@ -342,7 +368,7 @@ void Champion::gainXP(int amount) {
         m_currentMana += 30.0f;
         m_attackDamage += 3.0f;
         // XP pour le prochain niveau
-        if (m_level < 18) {
+        if (m_level < Config::Champion::MAX_LEVEL) {
             m_xpToNextLevel = XP_TABLE[m_level];
         }
         std::cout << "LEVEL UP! Niveau " << m_level << " (" << m_skillPoints << " point(s) disponible(s))" << std::endl;
@@ -389,4 +415,28 @@ bool Champion::castSpell(int spellIndex) {
     spell.use();
     std::cout << "Sort " << spell.key << " lance! (CD: " << spell.getCooldown() << "s, Mana: " << spell.getManaCost() << ")" << std::endl;
     return true;
+}
+
+bool Champion::popJustAttacked(uint32_t& outTargetId) {
+    if (m_justAttacked) {
+        outTargetId = m_justAttackedTargetId;
+        m_justAttacked = false;
+        return true;
+    }
+    return false;
+}
+
+void Champion::playAttackAnimation(CombatEntity* target) {
+    m_target = target;
+    m_isAttacking = true;
+    m_attackVisualTimer = m_attackVisualDuration;
+}
+
+void Champion::updateVisuals(float deltaTime) {
+    if (m_isAttacking) {
+        m_attackVisualTimer -= deltaTime;
+        if (m_attackVisualTimer <= 0.0f) {
+            m_isAttacking = false;
+        }
+    }
 }

@@ -1,8 +1,8 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\HUD\HUD.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUD.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDBar.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDComponent.hpp \
+ D:\bouchutt\LeagueOfLegends\src\HUD\HUD.cpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \
@@ -287,13 +287,14 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: \
  C:/msys64/ucrt64/include/SFML/System/InputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/MemoryInputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/Sleep.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Champion.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/CombatEntity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Entity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Team.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Item.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Map.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Champion.hpp \
+ D:/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Team.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Item.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Map.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Config.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
@@ -309,7 +310,7 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDGold.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDLevel.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDSpells.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDStats.hpp
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp

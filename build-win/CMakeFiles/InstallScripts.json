@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/Tanguy/MiniLeagueOfLegends/build-win/cmake_install.cmake"
+		"D:/bouchutt/LeagueOfLegends/build-win/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

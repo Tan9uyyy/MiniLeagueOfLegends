@@ -4,6 +4,7 @@
 #include "Map.hpp"
 #include "Spell.hpp"
 #include <SFML/Graphics.hpp>
+#include "Config.hpp"
 #include <array>
 #include <cmath>
 #include <vector>
@@ -34,6 +35,13 @@ public:
 
   // Définir une cible à attaquer
   void setTargetEntity(CombatEntity *target) { m_target = target; }
+
+  // Exécute l'animation d'attaque localement (appelé par le client après un événement serveur)
+  void playAttackAnimation(CombatEntity* target);
+  // Met à jour les compteurs visuels (appelé sur le client)
+  void updateVisuals(float deltaTime);
+  // Le serveur vérifie si une attaque vient d'avoir lieu et récupère l'ID de la cible
+  bool popJustAttacked(uint32_t& outTargetId);
 
   // Inventaire
   const std::vector<ItemTemplate> &getInventory() const { return m_inventory; }
@@ -97,6 +105,8 @@ private:
   float m_attackVisualTimer = 0.0f;
   float m_attackVisualDuration =
       0.15f; // Le laser s'affiche pendant 0.15 secondes
+  bool m_justAttacked = false;
+  uint32_t m_justAttackedTargetId = 0;
 
   // Système d'économie
   float m_gold = 500.0f;
@@ -116,7 +126,7 @@ private:
   int m_skillPoints = 1;     // 1 point de compétence au niveau 1
 
   // Table XP par niveau (LoL-like)
-  static constexpr int XP_TABLE[18] = {
+  static constexpr int XP_TABLE[Config::Champion::MAX_LEVEL] = {
     0, 280, 380, 480, 580, 680, 780, 880, 980, 1080,
     1180, 1280, 1380, 1480, 1580, 1680, 1780, 1880
   };
@@ -127,5 +137,8 @@ private:
   // Variables du Rappel
   bool m_isRecalling = false;
   float m_recallTimer = 0.0f;
-  static constexpr float RECALL_DURATION = 8.0f;
+
+  // Respawn
+  float m_respawnTimer = 0.0f;
+  static constexpr float RESPAWN_DURATION = 10.0f;
 };

@@ -13,5 +13,15 @@
             "generator": "MinGW Makefiles",
             "binaryDir": "${sourceDir}/build-win"
         }
+    ],
+    "buildPresets": [
+        {
+            "name": "linux",
+            "configurePreset": "linux"
+        },
+        {
+            "name": "windows",
+            "configurePreset": "windows"
+        }
     ]
 }

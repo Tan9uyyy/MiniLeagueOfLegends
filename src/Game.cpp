@@ -1,4 +1,5 @@
 #include "Game.hpp"
+#include "Config.hpp"
 #include "ClickIndicator.hpp"
 #include "NetworkIds.hpp"
 #include "NetworkMessages.hpp"
@@ -9,8 +10,8 @@
 Game::Game() {
   // 1. Fenêtre en plein écran
   sf::VideoMode desktopMode = sf::VideoMode::getDesktopMode();
-  m_window.create(desktopMode, "Mini League of Legends", sf::State::Fullscreen);
-  m_window.setFramerateLimit(60);
+  m_window.create(desktopMode, Config::Game::WINDOW_TITLE, sf::State::Fullscreen);
+  m_window.setFramerateLimit(Config::Game::FPS_LIMIT);
 
   // 2. Vues (caméra + minimap)
   initViews();
@@ -42,13 +43,13 @@ Game::Game() {
 void Game::initViews() {
   sf::VideoMode desktopMode = sf::VideoMode::getDesktopMode();
 
-  m_camera = sf::View(sf::Vector2f(0.0f, 0.0f),
+  m_camera = sf::View(sf::Vector2f(Config::Game::MAP_WIDTH / 2.0f, Config::Game::MAP_HEIGHT / 2.0f),
                       sf::Vector2f(desktopMode.size.x, desktopMode.size.y));
 
-  m_minimapView = sf::View(sf::Vector2f(5000.0f, 5000.0f),
-                           sf::Vector2f(10000.0f, 10000.0f));
+  m_minimapView = sf::View(sf::Vector2f(Config::Game::MAP_WIDTH / 2.0f, Config::Game::MAP_HEIGHT / 2.0f),
+                           sf::Vector2f(Config::Game::MAP_WIDTH, Config::Game::MAP_HEIGHT));
 
-  float minimapSize = 350.0f;
+  float minimapSize = Config::Game::MINIMAP_SIZE;
   float viewportW = minimapSize / desktopMode.size.x;
   float viewportH = minimapSize / desktopMode.size.y;
 
@@ -62,8 +63,8 @@ void Game::initNetwork() {
 
   sf::Packet joinPacket;
   joinPacket << MessageType::JOIN;
-  auto ipStr = sf::IpAddress::resolve("127.0.0.1");
-  if (!ipStr || m_socket.send(joinPacket, ipStr.value(), 54321) !=
+  auto ipStr = sf::IpAddress::resolve(Config::Network::SERVER_IP);
+  if (!ipStr || m_socket.send(joinPacket, ipStr.value(), Config::Network::SERVER_PORT) !=
                     sf::Socket::Status::Done) {
     std::cerr << "Erreur : Impossible d'envoyer le paquet JOIN au serveur."
               << std::endl;
@@ -96,21 +97,21 @@ void Game::initNetwork() {
 }
 
 void Game::initWorld() {
-  auto mapPtr = std::make_unique<Map>(10000.0f, 10000.0f);
+  auto mapPtr = std::make_unique<Map>(Config::Game::MAP_WIDTH, Config::Game::MAP_HEIGHT);
   m_gameMap = mapPtr.get();
 
   // Nexus Allié
   auto alliedNexus =
-      std::make_unique<Nexus>(sf::Vector2f(1000.0f, 9000.0f), Team::ALLIED);
+      std::make_unique<Nexus>(Config::Map::ALLIED_NEXUS_POS, Team::ALLIED);
   m_gameMap->addObstacle(alliedNexus->getBounds());
   alliedNexus->setNetworkId(NetworkIds::ALLIED_NEXUS);
   m_entities.push_back(std::move(alliedNexus));
 
   // Tourelles Alliées
   auto turretA1 =
-      std::make_unique<Turret>(sf::Vector2f(1200.0f, 8500.0f), Team::ALLIED);
+      std::make_unique<Turret>(Config::Map::ALLIED_TURRET_1_POS, Team::ALLIED);
   auto turretA2 =
-      std::make_unique<Turret>(sf::Vector2f(1500.0f, 8800.0f), Team::ALLIED);
+      std::make_unique<Turret>(Config::Map::ALLIED_TURRET_2_POS, Team::ALLIED);
   m_gameMap->addObstacle(turretA1->getBounds());
   m_gameMap->addObstacle(turretA2->getBounds());
   turretA1->setNetworkId(NetworkIds::ALLIED_TURRET_1);
@@ -120,16 +121,16 @@ void Game::initWorld() {
 
   // Nexus Ennemi
   auto enemyNexus =
-      std::make_unique<Nexus>(sf::Vector2f(2500.0f, 8000.0f), Team::ENEMY);
+      std::make_unique<Nexus>(Config::Map::ENEMY_NEXUS_POS, Team::ENEMY);
   m_gameMap->addObstacle(enemyNexus->getBounds());
   enemyNexus->setNetworkId(NetworkIds::ENEMY_NEXUS);
   m_entities.push_back(std::move(enemyNexus));
 
   // Tourelles Ennemies
   auto turretE1 =
-      std::make_unique<Turret>(sf::Vector2f(2200.0f, 8500.0f), Team::ENEMY);
+      std::make_unique<Turret>(Config::Map::ENEMY_TURRET_1_POS, Team::ENEMY);
   auto turretE2 =
-      std::make_unique<Turret>(sf::Vector2f(2500.0f, 8300.0f), Team::ENEMY);
+      std::make_unique<Turret>(Config::Map::ENEMY_TURRET_2_POS, Team::ENEMY);
   m_gameMap->addObstacle(turretE1->getBounds());
   m_gameMap->addObstacle(turretE2->getBounds());
   turretE1->setNetworkId(NetworkIds::ENEMY_TURRET_1);
@@ -143,7 +144,7 @@ void Game::initWorld() {
 
   // On crée un champion local "Dummy" pour la caméra et l'interface
   // Sa vraie position sera mise à jour par le serveur.
-  auto championPtr = std::make_unique<Champion>(sf::Vector2f(1300.0f, 8800.0f),
+  auto championPtr = std::make_unique<Champion>(Config::Map::ALLIED_SPAWN_POS,
                                                 *m_gameMap, Team::ALLIED);
   championPtr->setNetworkId(m_localChampionId);
   m_champion = championPtr.get();
@@ -310,8 +311,9 @@ void Game::processNetwork() {
              sf::Socket::Status::Done &&
          senderIp.has_value()) {
     MessageType type;
-    if (packet >> type && type == MessageType::STATE) {
-      uint32_t entityCount;
+    if (packet >> type) {
+      if (type == MessageType::STATE) {
+        uint32_t entityCount;
       packet >> entityCount;
 
       for (uint32_t i = 0; i < entityCount; ++i) {
@@ -375,6 +377,20 @@ void Game::processNetwork() {
           }
         }
       }
+      } else if (type == MessageType::ATTACK_ANIM) {
+        uint32_t attackerId, targetId;
+        if (packet >> attackerId >> targetId) {
+          Champion* attacker = nullptr;
+          CombatEntity* target = nullptr;
+          for (auto& entity : m_entities) {
+            if (entity->getNetworkId() == attackerId) attacker = dynamic_cast<Champion*>(entity.get());
+            if (entity->getNetworkId() == targetId) target = dynamic_cast<CombatEntity*>(entity.get());
+          }
+          if (attacker && target) {
+            attacker->playAttackAnimation(target);
+          }
+        }
+      }
     }
   }
 }
@@ -392,8 +408,11 @@ void Game::update(float deltaTime) {
     if (dynamic_cast<ClickIndicator *>(entity.get())) {
       entity->update(deltaTime);
     }
+    if (auto champ = dynamic_cast<Champion *>(entity.get())) {
+      champ->updateVisuals(deltaTime);
+    }
     // L'update des `Champion` locaux est désactivé car la position est
-    // contrôlée par le réseau
+    // contrôlée par le réseau, mais on met à jour les visuels (lazers, etc.)
   }
 }
 
@@ -411,8 +430,8 @@ void Game::render() {
 }
 
 void Game::sendPacket(sf::Packet &packet) {
-  if (auto ipObj = sf::IpAddress::resolve("127.0.0.1")) {
-    (void)m_socket.send(packet, ipObj.value(), 54321);
+  if (auto ipObj = sf::IpAddress::resolve(Config::Network::SERVER_IP)) {
+    (void)m_socket.send(packet, ipObj.value(), Config::Network::SERVER_PORT);
   }
 }
 

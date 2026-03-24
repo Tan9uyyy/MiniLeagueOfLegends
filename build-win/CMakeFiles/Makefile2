@@ -53,20 +53,22 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Tanguy\MiniLeagueOfLegends
+CMAKE_SOURCE_DIR = D:\bouchutt\LeagueOfLegends
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Tanguy\MiniLeagueOfLegends\build-win
+CMAKE_BINARY_DIR = D:\bouchutt\LeagueOfLegends\build-win
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/MiniLeagueOfLegends.dir/all
+all: CMakeFiles/MiniLeagueOfLegendsServer.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MiniLeagueOfLegends.dir/codegen
+codegen: CMakeFiles/MiniLeagueOfLegendsServer.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MiniLeagueOfLegends.dir/clean
+clean: CMakeFiles/MiniLeagueOfLegendsServer.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,14 +87,14 @@ clean: CMakeFiles/MiniLeagueOfLegends.dir/clean
 CMakeFiles/MiniLeagueOfLegends.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target MiniLeagueOfLegends"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target MiniLeagueOfLegends"
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MiniLeagueOfLegends.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MiniLeagueOfLegends.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 0
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/rule
 
 # Convenience name for target.
@@ -101,13 +104,45 @@ MiniLeagueOfLegends: CMakeFiles/MiniLeagueOfLegends.dir/rule
 # codegen rule for target.
 CMakeFiles/MiniLeagueOfLegends.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Tanguy\MiniLeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target MiniLeagueOfLegends"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target MiniLeagueOfLegends"
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/codegen
 
 # clean rule for target.
 CMakeFiles/MiniLeagueOfLegends.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegends.dir\build.make CMakeFiles/MiniLeagueOfLegends.dir/clean
 .PHONY : CMakeFiles/MiniLeagueOfLegends.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MiniLeagueOfLegendsServer.dir
+
+# All Build rule for target.
+CMakeFiles/MiniLeagueOfLegendsServer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegendsServer.dir\build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegendsServer.dir\build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28 "Built target MiniLeagueOfLegendsServer"
+.PHONY : CMakeFiles/MiniLeagueOfLegendsServer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MiniLeagueOfLegendsServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MiniLeagueOfLegendsServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles 0
+.PHONY : CMakeFiles/MiniLeagueOfLegendsServer.dir/rule
+
+# Convenience name for target.
+MiniLeagueOfLegendsServer: CMakeFiles/MiniLeagueOfLegendsServer.dir/rule
+.PHONY : MiniLeagueOfLegendsServer
+
+# codegen rule for target.
+CMakeFiles/MiniLeagueOfLegendsServer.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegendsServer.dir\build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\bouchutt\LeagueOfLegends\build-win\CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28 "Finished codegen for target MiniLeagueOfLegendsServer"
+.PHONY : CMakeFiles/MiniLeagueOfLegendsServer.dir/codegen
+
+# clean rule for target.
+CMakeFiles/MiniLeagueOfLegendsServer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MiniLeagueOfLegendsServer.dir\build.make CMakeFiles/MiniLeagueOfLegendsServer.dir/clean
+.PHONY : CMakeFiles/MiniLeagueOfLegendsServer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

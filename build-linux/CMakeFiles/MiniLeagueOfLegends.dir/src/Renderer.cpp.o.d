@@ -1,8 +1,8 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/Renderer.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/Renderer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Renderer.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Renderer.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -275,15 +275,16 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o: \
  /usr/local/include/SFML/System/InputStream.hpp \
  /usr/local/include/SFML/System/MemoryInputStream.hpp \
  /usr/local/include/SFML/System/Sleep.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Champion.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Item.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Champion.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Team.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Item.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Map.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Config.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -306,8 +307,8 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/UIWindow.hpp

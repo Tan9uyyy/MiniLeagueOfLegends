@@ -1,6 +1,6 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\UIWindow.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/UIWindow.hpp \
+ D:\bouchutt\LeagueOfLegends\src\UIWindow.cpp \
+ D:/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \

@@ -1,110 +1,158 @@
 [
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\main.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\main.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/main.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\main.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\main.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/main.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Game.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Game.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Game.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Game.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Game.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Game.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Game.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Champion.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Champion.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Champion.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Map.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Map.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Map.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Pathfinder.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Pathfinder.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Pathfinder.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\ClickIndicator.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\ClickIndicator.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/ClickIndicator.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Nexus.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Nexus.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Nexus.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Turret.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Turret.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Turret.cpp",
-  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj"
-},
-{
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUD.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUD.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUD.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUD.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUD.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUD.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUD.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDBar.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUDBar.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDBar.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDBar.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUDBar.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUDBar.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDBar.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDStats.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUDStats.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDStats.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDStats.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUDStats.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUDStats.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDStats.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDSpells.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUDSpells.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDSpells.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDSpells.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUDSpells.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUDSpells.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDSpells.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDLevel.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUDLevel.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDLevel.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDLevel.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUDLevel.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUDLevel.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDLevel.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDGold.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\HUD\\HUDGold.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/HUD/HUDGold.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\HUD\\HUDGold.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\HUD\\HUDGold.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/HUD/HUDGold.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/HUD/HUDGold.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\ShopUI.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\ShopUI.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/ShopUI.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\ShopUI.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\ShopUI.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/ShopUI.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/ShopUI.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\SettingsUI.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\SettingsUI.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/SettingsUI.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\SettingsUI.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\SettingsUI.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/SettingsUI.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\UIWindow.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\UIWindow.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/UIWindow.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\UIWindow.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\UIWindow.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/UIWindow.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.obj"
 },
 {
-  "directory": "C:/Users/Tanguy/MiniLeagueOfLegends/build-win",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Renderer.cpp.obj -c C:\\Users\\Tanguy\\MiniLeagueOfLegends\\src\\Renderer.cpp",
-  "file": "C:/Users/Tanguy/MiniLeagueOfLegends/src/Renderer.cpp",
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Renderer.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Renderer.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Renderer.cpp",
   "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Renderer.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Champion.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Champion.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Champion.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Champion.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Map.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Map.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Map.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Map.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Pathfinder.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Pathfinder.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Pathfinder.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\ClickIndicator.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\ClickIndicator.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/ClickIndicator.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Nexus.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Nexus.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Nexus.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Nexus.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegends.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegends.dir\\src\\Turret.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Turret.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Turret.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegends.dir/src/Turret.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\server\\ServerMain.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\server\\ServerMain.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/server/ServerMain.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerMain.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\server\\ServerGame.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\server\\ServerGame.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/server/ServerGame.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\Champion.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Champion.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Champion.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Champion.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\Map.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Map.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Map.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Map.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\Pathfinder.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Pathfinder.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Pathfinder.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Pathfinder.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\ClickIndicator.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\ClickIndicator.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/ClickIndicator.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/ClickIndicator.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\Nexus.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Nexus.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Nexus.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Nexus.cpp.obj"
+},
+{
+  "directory": "D:/bouchutt/LeagueOfLegends/build-win",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/MiniLeagueOfLegendsServer.dir/includes_CXX.rsp -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles\\MiniLeagueOfLegendsServer.dir\\src\\Turret.cpp.obj -c D:\\bouchutt\\LeagueOfLegends\\src\\Turret.cpp",
+  "file": "D:/bouchutt/LeagueOfLegends/src/Turret.cpp",
+  "output": "CMakeFiles/MiniLeagueOfLegendsServer.dir/src/Turret.cpp.obj"
 }
 ]

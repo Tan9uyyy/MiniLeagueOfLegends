@@ -1,6 +1,6 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\main.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Game.hpp \
+ D:\bouchutt\LeagueOfLegends\src\main.cpp \
+ D:/bouchutt/LeagueOfLegends/include/Game.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \
@@ -285,13 +285,14 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/SFML/System/InputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/MemoryInputStream.hpp \
  C:/msys64/ucrt64/include/SFML/System/Sleep.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Champion.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/CombatEntity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Entity.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Team.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Item.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Map.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Champion.hpp \
+ D:/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Team.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Item.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Map.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Config.hpp \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
@@ -307,14 +308,31 @@ CMakeFiles/MiniLeagueOfLegends.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUD.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDBar.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDComponent.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDGold.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDLevel.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDSpells.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/HUD/HUDStats.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/Renderer.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/UIWindow.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/SettingsUI.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/ShopUI.hpp
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUD.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDBar.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDComponent.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDGold.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDLevel.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDSpells.hpp \
+ D:/bouchutt/LeagueOfLegends/include/HUD/HUDStats.hpp \
+ D:/bouchutt/LeagueOfLegends/include/Renderer.hpp \
+ D:/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
+ D:/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
+ D:/bouchutt/LeagueOfLegends/include/ShopUI.hpp \
+ C:/msys64/ucrt64/include/SFML/Network.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/Ftp.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/Export.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/TcpSocket.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/Socket.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/SocketHandle.hpp \
+ C:/msys64/ucrt64/include/basetsd.h \
+ C:/msys64/ucrt64/include/SFML/Network/Http.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/IpAddress.hpp \
+ C:/msys64/ucrt64/include/c++/15.2.0/map \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tree.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_map.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_multimap.h \
+ C:/msys64/ucrt64/include/SFML/Network/Packet.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/SocketSelector.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/TcpListener.hpp \
+ C:/msys64/ucrt64/include/SFML/Network/UdpSocket.hpp

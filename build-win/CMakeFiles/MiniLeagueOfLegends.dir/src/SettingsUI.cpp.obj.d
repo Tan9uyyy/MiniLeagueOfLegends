@@ -1,7 +1,7 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/SettingsUI.cpp.obj: \
- C:\Users\Tanguy\MiniLeagueOfLegends\src\SettingsUI.cpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/SettingsUI.hpp \
- C:/Users/Tanguy/MiniLeagueOfLegends/include/UIWindow.hpp \
+ D:\bouchutt\LeagueOfLegends\src\SettingsUI.cpp \
+ D:/bouchutt/LeagueOfLegends/include/SettingsUI.hpp \
+ D:/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/ucrt64/include/SFML/Graphics/Export.hpp \

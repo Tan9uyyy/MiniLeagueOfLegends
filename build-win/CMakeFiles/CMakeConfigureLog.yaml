@@ -32,13 +32,15 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
@@ -54,10 +56,12 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
       - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
       - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
-      - "C:/Program Files/dotnet/mingw32-make.exe.com"
-      - "C:/Program Files/dotnet/mingw32-make.exe"
       - "C:/Program Files/Git/cmd/mingw32-make.exe.com"
       - "C:/Program Files/Git/cmd/mingw32-make.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/mingw32-make.exe.com"
+      - "C:/Users/bouch/AppData/Local/nvm/mingw32-make.exe"
+      - "C:/nvm4w/nodejs/mingw32-make.exe.com"
+      - "C:/nvm4w/nodejs/mingw32-make.exe"
       - "C:/Program Files/CMake/bin/mingw32-make.exe.com"
       - "C:/Program Files/CMake/bin/mingw32-make.exe"
       - "C:/msys64/ucrt64/bin/mingw32-make.exe.com"
@@ -69,13 +73,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -106,13 +114,15 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/Windows/System32/c++.com"
       - "C:/Windows/System32/c++.exe"
@@ -204,24 +214,6 @@ events:
       - "C:/Windows/System32/OpenSSH/clang++.com"
       - "C:/Windows/System32/OpenSSH/clang++.exe"
       - "C:/Windows/System32/OpenSSH/clang++"
-      - "C:/Program Files/dotnet/c++.com"
-      - "C:/Program Files/dotnet/c++.exe"
-      - "C:/Program Files/dotnet/c++"
-      - "C:/Program Files/dotnet/g++.com"
-      - "C:/Program Files/dotnet/g++.exe"
-      - "C:/Program Files/dotnet/g++"
-      - "C:/Program Files/dotnet/cl.com"
-      - "C:/Program Files/dotnet/cl.exe"
-      - "C:/Program Files/dotnet/cl"
-      - "C:/Program Files/dotnet/bcc.com"
-      - "C:/Program Files/dotnet/bcc.exe"
-      - "C:/Program Files/dotnet/bcc"
-      - "C:/Program Files/dotnet/icx.com"
-      - "C:/Program Files/dotnet/icx.exe"
-      - "C:/Program Files/dotnet/icx"
-      - "C:/Program Files/dotnet/clang++.com"
-      - "C:/Program Files/dotnet/clang++.exe"
-      - "C:/Program Files/dotnet/clang++"
       - "C:/Program Files/Git/cmd/c++.com"
       - "C:/Program Files/Git/cmd/c++.exe"
       - "C:/Program Files/Git/cmd/c++"
@@ -240,6 +232,42 @@ events:
       - "C:/Program Files/Git/cmd/clang++.com"
       - "C:/Program Files/Git/cmd/clang++.exe"
       - "C:/Program Files/Git/cmd/clang++"
+      - "C:/Users/bouch/AppData/Local/nvm/c++.com"
+      - "C:/Users/bouch/AppData/Local/nvm/c++.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/c++"
+      - "C:/Users/bouch/AppData/Local/nvm/g++.com"
+      - "C:/Users/bouch/AppData/Local/nvm/g++.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/g++"
+      - "C:/Users/bouch/AppData/Local/nvm/cl.com"
+      - "C:/Users/bouch/AppData/Local/nvm/cl.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/cl"
+      - "C:/Users/bouch/AppData/Local/nvm/bcc.com"
+      - "C:/Users/bouch/AppData/Local/nvm/bcc.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/bcc"
+      - "C:/Users/bouch/AppData/Local/nvm/icx.com"
+      - "C:/Users/bouch/AppData/Local/nvm/icx.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/icx"
+      - "C:/Users/bouch/AppData/Local/nvm/clang++.com"
+      - "C:/Users/bouch/AppData/Local/nvm/clang++.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/clang++"
+      - "C:/nvm4w/nodejs/c++.com"
+      - "C:/nvm4w/nodejs/c++.exe"
+      - "C:/nvm4w/nodejs/c++"
+      - "C:/nvm4w/nodejs/g++.com"
+      - "C:/nvm4w/nodejs/g++.exe"
+      - "C:/nvm4w/nodejs/g++"
+      - "C:/nvm4w/nodejs/cl.com"
+      - "C:/nvm4w/nodejs/cl.exe"
+      - "C:/nvm4w/nodejs/cl"
+      - "C:/nvm4w/nodejs/bcc.com"
+      - "C:/nvm4w/nodejs/bcc.exe"
+      - "C:/nvm4w/nodejs/bcc"
+      - "C:/nvm4w/nodejs/icx.com"
+      - "C:/nvm4w/nodejs/icx.exe"
+      - "C:/nvm4w/nodejs/icx"
+      - "C:/nvm4w/nodejs/clang++.com"
+      - "C:/nvm4w/nodejs/clang++.exe"
+      - "C:/nvm4w/nodejs/clang++"
       - "C:/Program Files/CMake/bin/c++.com"
       - "C:/Program Files/CMake/bin/c++.exe"
       - "C:/Program Files/CMake/bin/c++"
@@ -267,13 +295,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -306,13 +338,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "message-v1"
     backtrace:
@@ -333,7 +369,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/4.3.0/CompilerIdCXX/a.exe
+        D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/4.3.0/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
@@ -361,12 +397,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/ar.com"
     found: "C:/msys64/ucrt64/bin/ar.exe"
@@ -377,13 +415,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -410,12 +452,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/ranlib.com"
     found: "C:/msys64/ucrt64/bin/ranlib.exe"
@@ -426,13 +470,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -459,12 +507,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/strip.com"
     found: "C:/msys64/ucrt64/bin/strip.exe"
@@ -475,13 +525,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -508,12 +562,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/ld.com"
     found: "C:/msys64/ucrt64/bin/ld.exe"
@@ -524,13 +580,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -557,12 +617,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/nm.com"
     found: "C:/msys64/ucrt64/bin/nm.exe"
@@ -573,13 +635,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -606,12 +672,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/objdump.com"
     found: "C:/msys64/ucrt64/bin/objdump.exe"
@@ -622,13 +690,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -655,12 +727,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/objcopy.com"
     found: "C:/msys64/ucrt64/bin/objcopy.exe"
@@ -671,13 +745,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -704,12 +782,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/readelf.com"
     found: "C:/msys64/ucrt64/bin/readelf.exe"
@@ -720,13 +800,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -753,12 +837,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/dlltool.com"
     found: "C:/msys64/ucrt64/bin/dlltool.exe"
@@ -769,13 +855,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -802,12 +892,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/addr2line.com"
     found: "C:/msys64/ucrt64/bin/addr2line.exe"
@@ -818,13 +910,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -851,12 +947,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/tapi.com"
       - "C:/msys64/ucrt64/bin/tapi.exe"
@@ -876,24 +974,30 @@ events:
       - "C:/Windows/System32/OpenSSH/tapi.com"
       - "C:/Windows/System32/OpenSSH/tapi.exe"
       - "C:/Windows/System32/OpenSSH/tapi"
-      - "C:/Program Files/dotnet/tapi.com"
-      - "C:/Program Files/dotnet/tapi.exe"
-      - "C:/Program Files/dotnet/tapi"
       - "C:/Program Files/Git/cmd/tapi.com"
       - "C:/Program Files/Git/cmd/tapi.exe"
       - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Users/bouch/AppData/Local/nvm/tapi.com"
+      - "C:/Users/bouch/AppData/Local/nvm/tapi.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/tapi"
+      - "C:/nvm4w/nodejs/tapi.com"
+      - "C:/nvm4w/nodejs/tapi.exe"
+      - "C:/nvm4w/nodejs/tapi"
       - "C:/Program Files/CMake/bin/tapi.com"
       - "C:/Program Files/CMake/bin/tapi.exe"
       - "C:/Program Files/CMake/bin/tapi"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/tapi.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/tapi.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/tapi"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/tapi.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/tapi.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/tapi"
+      - "C:/Users/bouch/.local/bin/tapi.com"
+      - "C:/Users/bouch/.local/bin/tapi.exe"
+      - "C:/Users/bouch/.local/bin/tapi"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/tapi.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/tapi.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/tapi"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -902,13 +1006,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -938,12 +1046,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/gcc-ar-15.2.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-15.2.exe"
@@ -963,24 +1073,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.com"
       - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ar-15.2"
-      - "C:/Program Files/dotnet/gcc-ar-15.2.com"
-      - "C:/Program Files/dotnet/gcc-ar-15.2.exe"
-      - "C:/Program Files/dotnet/gcc-ar-15.2"
       - "C:/Program Files/Git/cmd/gcc-ar-15.2.com"
       - "C:/Program Files/Git/cmd/gcc-ar-15.2.exe"
       - "C:/Program Files/Git/cmd/gcc-ar-15.2"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15.2.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15.2"
+      - "C:/nvm4w/nodejs/gcc-ar-15.2.com"
+      - "C:/nvm4w/nodejs/gcc-ar-15.2.exe"
+      - "C:/nvm4w/nodejs/gcc-ar-15.2"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15.2.com"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15.2.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15.2"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.2"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2"
       - "C:/msys64/ucrt64/bin/gcc-ar-15.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-15.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-15"
@@ -999,24 +1115,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ar-15.com"
       - "C:/Windows/System32/OpenSSH/gcc-ar-15.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ar-15"
-      - "C:/Program Files/dotnet/gcc-ar-15.com"
-      - "C:/Program Files/dotnet/gcc-ar-15.exe"
-      - "C:/Program Files/dotnet/gcc-ar-15"
       - "C:/Program Files/Git/cmd/gcc-ar-15.com"
       - "C:/Program Files/Git/cmd/gcc-ar-15.exe"
       - "C:/Program Files/Git/cmd/gcc-ar-15"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar-15"
+      - "C:/nvm4w/nodejs/gcc-ar-15.com"
+      - "C:/nvm4w/nodejs/gcc-ar-15.exe"
+      - "C:/nvm4w/nodejs/gcc-ar-15"
       - "C:/Program Files/CMake/bin/gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar-15"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15.com"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ar-15"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar-15"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15"
       - "C:/msys64/ucrt64/bin/gcc-ar15.com"
       - "C:/msys64/ucrt64/bin/gcc-ar15.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar15"
@@ -1035,24 +1157,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ar15.com"
       - "C:/Windows/System32/OpenSSH/gcc-ar15.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ar15"
-      - "C:/Program Files/dotnet/gcc-ar15.com"
-      - "C:/Program Files/dotnet/gcc-ar15.exe"
-      - "C:/Program Files/dotnet/gcc-ar15"
       - "C:/Program Files/Git/cmd/gcc-ar15.com"
       - "C:/Program Files/Git/cmd/gcc-ar15.exe"
       - "C:/Program Files/Git/cmd/gcc-ar15"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar15.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar15.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ar15"
+      - "C:/nvm4w/nodejs/gcc-ar15.com"
+      - "C:/nvm4w/nodejs/gcc-ar15.exe"
+      - "C:/nvm4w/nodejs/gcc-ar15"
       - "C:/Program Files/CMake/bin/gcc-ar15.com"
       - "C:/Program Files/CMake/bin/gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar15"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ar15"
+      - "C:/Users/bouch/.local/bin/gcc-ar15.com"
+      - "C:/Users/bouch/.local/bin/gcc-ar15.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ar15"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ar15"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15"
       - "C:/msys64/ucrt64/bin/gcc-ar.com"
     found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
@@ -1062,13 +1190,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -1098,12 +1230,14 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
     searched_directories:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.exe"
@@ -1123,24 +1257,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.com"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2"
-      - "C:/Program Files/dotnet/gcc-ranlib-15.2.com"
-      - "C:/Program Files/dotnet/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib-15.2"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15.2.com"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15.2.exe"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15.2"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15.2.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15.2"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15.2.com"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15.2.exe"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15.2"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15.2.com"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15.2.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15.2"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.2"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-15.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-15.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-15"
@@ -1159,24 +1299,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.com"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib-15"
-      - "C:/Program Files/dotnet/gcc-ranlib-15.com"
-      - "C:/Program Files/dotnet/gcc-ranlib-15.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib-15"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15.com"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15.exe"
       - "C:/Program Files/Git/cmd/gcc-ranlib-15"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib-15"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15.com"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15.exe"
+      - "C:/nvm4w/nodejs/gcc-ranlib-15"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15.com"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib-15"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib-15"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15"
       - "C:/msys64/ucrt64/bin/gcc-ranlib15.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib15.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib15"
@@ -1195,24 +1341,30 @@ events:
       - "C:/Windows/System32/OpenSSH/gcc-ranlib15.com"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib15.exe"
       - "C:/Windows/System32/OpenSSH/gcc-ranlib15"
-      - "C:/Program Files/dotnet/gcc-ranlib15.com"
-      - "C:/Program Files/dotnet/gcc-ranlib15.exe"
-      - "C:/Program Files/dotnet/gcc-ranlib15"
       - "C:/Program Files/Git/cmd/gcc-ranlib15.com"
       - "C:/Program Files/Git/cmd/gcc-ranlib15.exe"
       - "C:/Program Files/Git/cmd/gcc-ranlib15"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib15.com"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib15.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/gcc-ranlib15"
+      - "C:/nvm4w/nodejs/gcc-ranlib15.com"
+      - "C:/nvm4w/nodejs/gcc-ranlib15.exe"
+      - "C:/nvm4w/nodejs/gcc-ranlib15"
       - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib15"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15.com"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15.exe"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib15.com"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib15.exe"
+      - "C:/Users/bouch/.local/bin/gcc-ranlib15"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/gcc-ranlib15"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.com"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.exe"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15"
       - "C:/msys64/ucrt64/bin/gcc-ranlib.com"
     found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
@@ -1222,13 +1374,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
   -
     kind: "find-v1"
     backtrace:
@@ -1257,13 +1413,15 @@ events:
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1292,12 +1450,15 @@ events:
       - "C:/Windows/System32/OpenSSH/windres.com"
       - "C:/Windows/System32/OpenSSH/windres.exe"
       - "C:/Windows/System32/OpenSSH/windres"
-      - "C:/Program Files/dotnet/windres.com"
-      - "C:/Program Files/dotnet/windres.exe"
-      - "C:/Program Files/dotnet/windres"
       - "C:/Program Files/Git/cmd/windres.com"
       - "C:/Program Files/Git/cmd/windres.exe"
       - "C:/Program Files/Git/cmd/windres"
+      - "C:/Users/bouch/AppData/Local/nvm/windres.com"
+      - "C:/Users/bouch/AppData/Local/nvm/windres.exe"
+      - "C:/Users/bouch/AppData/Local/nvm/windres"
+      - "C:/nvm4w/nodejs/windres.com"
+      - "C:/nvm4w/nodejs/windres.exe"
+      - "C:/nvm4w/nodejs/windres"
       - "C:/Program Files/CMake/bin/windres.com"
       - "C:/Program Files/CMake/bin/windres.exe"
       - "C:/Program Files/CMake/bin/windres"
@@ -1310,13 +1471,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MiniLeagueOfLegends"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1332,8 +1497,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii"
-      binary: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii"
+      source: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv"
+      binary: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1344,13 +1509,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii'
+        Change Dir: 'D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_cd147/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cd147.dir\\build.make CMakeFiles/cmTC_cd147.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii'
-        Building CXX object CMakeFiles/cmTC_cd147.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_695a9/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_695a9.dir\\build.make CMakeFiles/cmTC_695a9.dir/build
+        mingw32-make[1]: Entering directory 'D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv'
+        Building CXX object CMakeFiles/cmTC_695a9.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -1358,8 +1523,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cd147.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccLiMn6j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_695a9.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\bouch\\AppData\\Local\\Temp\\cc7X3Ate.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1384,14 +1549,14 @@ events:
          C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 3a1a95c83f0136a64748ec8c5a2a87f3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccLiMn6j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\bouch\\AppData\\Local\\Temp\\cc7X3Ate.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_cd147.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cd147.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_695a9.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_695a9.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -1402,16 +1567,16 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cd147.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_cd147.'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccObMpjq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cd147.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cd147.dir/objects.a --no-whole-archive --out-implib libcmTC_cd147.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_695a9.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_695a9.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\bouch\\AppData\\Local\\Temp\\ccSppxOq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_695a9.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_695a9.dir/objects.a --no-whole-archive --out-implib libcmTC_695a9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccObMpjq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cd147.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cd147.dir/objects.a --no-whole-archive --out-implib libcmTC_cd147.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\bouch\\AppData\\Local\\Temp\\ccSppxOq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_695a9.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_695a9.dir/objects.a --no-whole-archive --out-implib libcmTC_695a9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cd147.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_cd147.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_cd147.dir/objects.a
-        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_cd147.dir/objects.a @CMakeFiles\\cmTC_cd147.dir\\objects1.rsp
-        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_cd147.dir/objects.a -Wl,--no-whole-archive -o cmTC_cd147.exe -Wl,--out-implib,libcmTC_cd147.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_695a9.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_695a9.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_695a9.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_695a9.dir/objects.a @CMakeFiles\\cmTC_695a9.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_695a9.dir/objects.a -Wl,--no-whole-archive -o cmTC_695a9.exe -Wl,--out-implib,libcmTC_695a9.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv'
         
       exitCode: 0
   -
@@ -1450,13 +1615,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii']
+        ignore line: [Change Dir: 'D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_cd147/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cd147.dir\\build.make CMakeFiles/cmTC_cd147.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-mx45ii']
-        ignore line: [Building CXX object CMakeFiles/cmTC_cd147.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_695a9/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_695a9.dir\\build.make CMakeFiles/cmTC_695a9.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/CMakeScratch/TryCompile-wk35kv']
+        ignore line: [Building CXX object CMakeFiles/cmTC_695a9.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -1464,8 +1629,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cd147.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccLiMn6j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_695a9.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\bouch\\AppData\\Local\\Temp\\cc7X3Ate.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1490,8 +1655,8 @@ events:
         ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 3a1a95c83f0136a64748ec8c5a2a87f3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccLiMn6j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\bouch\\AppData\\Local\\Temp\\cc7X3Ate.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
@@ -1502,9 +1667,9 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cd147.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_cd147.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cd147.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_695a9.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_695a9.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_695a9.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -1522,13 +1687,13 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cd147.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_cd147.']
-        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccObMpjq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cd147.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cd147.dir/objects.a --no-whole-archive --out-implib libcmTC_cd147.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_695a9.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_695a9.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\bouch\\AppData\\Local\\Temp\\ccSppxOq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_695a9.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_695a9.dir/objects.a --no-whole-archive --out-implib libcmTC_695a9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccObMpjq.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\bouch\\AppData\\Local\\Temp\\ccSppxOq.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -1550,7 +1715,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_cd147.exe] ==> ignore
+          arg [cmTC_695a9.exe] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -1561,10 +1726,10 @@ events:
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_cd147.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_695a9.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_cd147.dll.a] ==> ignore
+          arg [libcmTC_695a9.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1590,7 +1755,7 @@ events:
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Tanguy\\AppData\\Local\\Temp\\ccObMpjq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cd147.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cd147.dir/objects.a --no-whole-archive --out-implib libcmTC_cd147.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\bouch\\AppData\\Local\\Temp\\ccSppxOq.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_695a9.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_695a9.dir/objects.a --no-whole-archive --out-implib libcmTC_695a9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -1654,27 +1819,33 @@ events:
       - "C:/Windows/System32/OpenSSH/SFML/doc/"
       - "C:/Windows/System32/OpenSSH/share/doc/SFML/"
       - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/dotnet/SFML/doc/"
-      - "C:/Program Files/dotnet/share/doc/SFML/"
-      - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/SFML/doc/"
       - "C:/Program Files/Git/cmd/share/doc/SFML/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Users/bouch/AppData/Local/nvm/SFML/doc/"
+      - "C:/Users/bouch/AppData/Local/nvm/share/doc/SFML/"
+      - "C:/Users/bouch/AppData/Local/nvm/"
+      - "C:/nvm4w/nodejs/SFML/doc/"
+      - "C:/nvm4w/nodejs/share/doc/SFML/"
+      - "C:/nvm4w/nodejs/"
       - "C:/Program Files/CMake/bin/SFML/doc/"
       - "C:/Program Files/CMake/bin/share/doc/SFML/"
       - "C:/Program Files/CMake/bin/"
       - "C:/msys64/ucrt64/bin/SFML/doc/"
       - "C:/msys64/ucrt64/bin/share/doc/SFML/"
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/SFML/doc/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/share/doc/SFML/"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/SFML/doc/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/share/doc/SFML/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/SFML/doc/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/share/doc/SFML/"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/.local/bin/SFML/doc/"
+      - "C:/Users/bouch/.local/bin/share/doc/SFML/"
+      - "C:/Users/bouch/.local/bin/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/SFML/doc/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/share/doc/SFML/"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/SFML/doc/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/share/doc/SFML/"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/SFML/doc/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/share/doc/SFML/"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/include/SFML/doc/"
       - "C:/Program Files/include/share/doc/SFML/"
       - "C:/Program Files/include/"
@@ -1702,9 +1873,9 @@ events:
       - "C:/msys64/ucrt64/SFML/doc/"
       - "C:/msys64/ucrt64/share/doc/SFML/"
       - "C:/msys64/ucrt64/"
-      - "C:/Users/Tanguy/Library/Frameworks/SFML/doc/"
-      - "C:/Users/Tanguy/Library/Frameworks/share/doc/SFML/"
-      - "C:/Users/Tanguy/Library/Frameworks/"
+      - "C:/Users/bouch/Library/Frameworks/SFML/doc/"
+      - "C:/Users/bouch/Library/Frameworks/share/doc/SFML/"
+      - "C:/Users/bouch/Library/Frameworks/"
       - "/Library/Frameworks/SFML/doc/"
       - "/Library/Frameworks/share/doc/SFML/"
       - "/Library/Frameworks/"
@@ -1742,27 +1913,33 @@ events:
       - "C:/Windows/System32/OpenSSH/SFML/doc/SFML.tag"
       - "C:/Windows/System32/OpenSSH/share/doc/SFML/SFML.tag"
       - "C:/Windows/System32/OpenSSH/SFML.tag"
-      - "C:/Program Files/dotnet/SFML/doc/SFML.tag"
-      - "C:/Program Files/dotnet/share/doc/SFML/SFML.tag"
-      - "C:/Program Files/dotnet/SFML.tag"
       - "C:/Program Files/Git/cmd/SFML/doc/SFML.tag"
       - "C:/Program Files/Git/cmd/share/doc/SFML/SFML.tag"
       - "C:/Program Files/Git/cmd/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/nvm/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/nvm/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/nvm/SFML.tag"
+      - "C:/nvm4w/nodejs/SFML/doc/SFML.tag"
+      - "C:/nvm4w/nodejs/share/doc/SFML/SFML.tag"
+      - "C:/nvm4w/nodejs/SFML.tag"
       - "C:/Program Files/CMake/bin/SFML/doc/SFML.tag"
       - "C:/Program Files/CMake/bin/share/doc/SFML/SFML.tag"
       - "C:/Program Files/CMake/bin/SFML.tag"
       - "C:/msys64/ucrt64/bin/SFML/doc/SFML.tag"
       - "C:/msys64/ucrt64/bin/share/doc/SFML/SFML.tag"
       - "C:/msys64/ucrt64/bin/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/SFML/doc/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/share/doc/SFML/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Microsoft/WindowsApps/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/SFML/doc/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/share/doc/SFML/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Microsoft VS Code/bin/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/SFML/doc/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/share/doc/SFML/SFML.tag"
-      - "C:/Users/Tanguy/AppData/Local/Programs/Antigravity/bin/SFML.tag"
+      - "C:/Users/bouch/.local/bin/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/.local/bin/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/.local/bin/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Microsoft/WindowsApps/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Antigravity/bin/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/AppData/Local/Programs/Microsoft VS Code/bin/SFML.tag"
       - "C:/Program Files/include/SFML/doc/SFML.tag"
       - "C:/Program Files/include/share/doc/SFML/SFML.tag"
       - "C:/Program Files/include/SFML.tag"
@@ -1790,9 +1967,9 @@ events:
       - "C:/msys64/ucrt64/SFML/doc/SFML.tag"
       - "C:/msys64/ucrt64/share/doc/SFML/SFML.tag"
       - "C:/msys64/ucrt64/SFML.tag"
-      - "C:/Users/Tanguy/Library/Frameworks/SFML/doc/SFML.tag"
-      - "C:/Users/Tanguy/Library/Frameworks/share/doc/SFML/SFML.tag"
-      - "C:/Users/Tanguy/Library/Frameworks/SFML.tag"
+      - "C:/Users/bouch/Library/Frameworks/SFML/doc/SFML.tag"
+      - "C:/Users/bouch/Library/Frameworks/share/doc/SFML/SFML.tag"
+      - "C:/Users/bouch/Library/Frameworks/SFML.tag"
       - "/Library/Frameworks/SFML/doc/SFML.tag"
       - "/Library/Frameworks/share/doc/SFML/SFML.tag"
       - "/Library/Frameworks/SFML.tag"
@@ -1822,13 +1999,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MiniLeagueOfLegends"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1855,6 +2036,10 @@ events:
         found: false
       -
         name: "Audio"
+        required: true
+        found: false
+      -
+        name: "Network"
         required: true
         found: false
     configs:
@@ -1896,27 +2081,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/sfml-config.cmake"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/sfml-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/lib/cps/SFML.cps"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/lib/cps/SFML.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/lib/cps/sfml.cps"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/lib/cps/sfml.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/share/cps/SFML.cps"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/share/cps/SFML.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/Tanguy/MiniLeagueOfLegends/build-win/CMakeFiles/pkgRedirects/share/cps/sfml.cps"
+        path: "D:/bouchutt/LeagueOfLegends/build-win/CMakeFiles/pkgRedirects/share/cps/sfml.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -2040,30 +2225,6 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Program Files/dotnet/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/lib/cps/SFML.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/lib/cps/sfml.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/share/cps/SFML.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/share/cps/sfml.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
         path: "C:/Program Files/Git/cmd/SFMLConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -2085,6 +2246,54 @@ events:
         reason: "no_exist"
       -
         path: "C:/Program Files/Git/cmd/share/cps/sfml.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/lib/cps/SFML.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/lib/cps/sfml.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/share/cps/SFML.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/bouch/AppData/Local/nvm/share/cps/sfml.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/lib/cps/SFML.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/lib/cps/sfml.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/share/cps/SFML.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/nvm4w/nodejs/share/cps/sfml.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -2146,13 +2355,17 @@ events:
         - "C:\\WINDOWS\\System32\\Wbem"
         - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\Tanguy\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\.local\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\bouch\\AppData\\Local\\nvm"
+        - "C:\\nvm4w\\nodejs"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MiniLeagueOfLegends"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

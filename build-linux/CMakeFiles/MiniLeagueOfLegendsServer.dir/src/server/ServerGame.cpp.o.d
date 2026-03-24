@@ -1,7 +1,7 @@
 CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/server/ServerGame.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/server/ServerGame.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/server/ServerGame.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/server/ServerGame.hpp \
  /usr/local/include/SFML/Network.hpp \
  /usr/local/include/SFML/Network/Ftp.hpp \
  /usr/local/include/SFML/Network/Export.hpp \
@@ -230,7 +230,7 @@ CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.o: \
  /usr/local/include/SFML/System/Vector2.inl \
  /usr/local/include/SFML/System/Vector3.hpp \
  /usr/local/include/SFML/System/Vector3.inl \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Entity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Entity.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
@@ -292,12 +292,13 @@ CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.o: \
  /usr/local/include/SFML/Window/Context.hpp \
  /usr/local/include/SFML/Window/Cursor.hpp \
  /usr/local/include/SFML/Window/Touch.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Map.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Team.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Champion.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Item.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Map.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Team.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Champion.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/CombatEntity.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Item.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Spell.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Config.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -320,7 +321,8 @@ CMakeFiles/MiniLeagueOfLegendsServer.dir/src/server/ServerGame.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Nexus.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/Turret.hpp \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/NetworkMessages.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Nexus.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/Turret.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/NetworkMessages.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/NetworkIds.hpp \
  /usr/include/c++/13/iostream

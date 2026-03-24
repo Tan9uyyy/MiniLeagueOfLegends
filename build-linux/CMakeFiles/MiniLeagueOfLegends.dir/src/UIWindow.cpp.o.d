@@ -1,7 +1,7 @@
 CMakeFiles/MiniLeagueOfLegends.dir/src/UIWindow.cpp.o: \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/src/UIWindow.cpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/src/UIWindow.cpp \
  /usr/include/stdc-predef.h \
- /mnt/5A4CF8BE4CF895CB/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
+ /home/bouchutt/bouchutt/LeagueOfLegends/include/UIWindow.hpp \
  /usr/local/include/SFML/Graphics.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
