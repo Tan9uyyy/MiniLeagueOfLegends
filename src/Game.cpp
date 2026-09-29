@@ -26,13 +26,15 @@ Game::Game() {
   // 4. Initialisation Réseau (Rejoindre le serveur)
   initNetwork();
 
-  // 5. Monde (Désormais on instancie peu de choses localement)
-  initWorld();
+  // (initWorld et HUD seront appelés à la reception de LOBBY_START_GAME)
 
   // 5. Interface
-  m_hud = std::make_unique<HUD>(m_champion, m_font);
+  // m_hud est initialisé lors de LOBBY_START_GAME
   m_shopUI = std::make_unique<ShopUI>(m_champion, m_font);
+  m_shopUI->onBuyItem = [this](int itemId) { this->sendBuyItem(itemId); };
+  m_shopUI->onSellItem = [this](int invIdx) { this->sendSellItem(invIdx); };
   m_settingsUI = std::make_unique<SettingsUI>(m_font);
+  m_lobbyUI = std::make_unique<LobbyUI>(m_font);
 
   // Enregistrer les fenêtres UI (ordre = priorité d'interception, du plus
   // prioritaire au moins)
@@ -59,41 +61,100 @@ void Game::initViews() {
 }
 
 void Game::initNetwork() {
-  m_socket.setBlocking(true); // Bloquant pour attendre la réponse initiale
+  m_socket.setBlocking(false); // Non bloquant pour permettre la retransmission
 
-  sf::Packet joinPacket;
-  joinPacket << MessageType::JOIN;
-  auto ipStr = sf::IpAddress::resolve(Config::Network::SERVER_IP);
-  if (!ipStr || m_socket.send(joinPacket, ipStr.value(), Config::Network::SERVER_PORT) !=
-                    sf::Socket::Status::Done) {
-    std::cerr << "Erreur : Impossible d'envoyer le paquet JOIN au serveur."
-              << std::endl;
+  auto masterIpStr = sf::IpAddress::resolve(Config::Network::MASTER_SERVER_IP);
+  if (!masterIpStr) {
+    std::cerr << "Erreur : Impossible de resoudre l'IP du serveur maitre." << std::endl;
     return;
   }
 
-  std::cout << "En attente de connexion au serveur..." << std::endl;
+  std::cout << "En attente de matchmaking (" << Config::Network::MASTER_SERVER_IP << ":" << Config::Network::MASTER_SERVER_PORT << ")..." << std::endl;
 
   sf::Packet reply;
   std::optional<sf::IpAddress> senderIp;
   unsigned short senderPort;
 
-  // On attend jusqu'à recevoir JOIN_ACK
-  while (true) {
-    if (m_socket.receive(reply, senderIp, senderPort) ==
-            sf::Socket::Status::Done &&
-        senderIp.has_value()) {
+  sf::Clock retryClock;
+  bool inQueue = false;
+
+  // 1. Attente du MATCHMAKING_FOUND
+  while (m_window.isOpen()) {
+    if (retryClock.getElapsedTime().asMilliseconds() > 500) {
+      sf::Packet joinPacket;
+      joinPacket << MessageType::MATCHMAKING_JOIN;
+      (void)m_socket.send(joinPacket, masterIpStr.value(), Config::Network::MASTER_SERVER_PORT);
+      retryClock.restart();
+    }
+
+    if (m_socket.receive(reply, senderIp, senderPort) == sf::Socket::Status::Done && senderIp.has_value()) {
       MessageType type;
-      if (reply >> type && type == MessageType::JOIN_ACK) {
-        reply >> m_localChampionId;
-        std::cout << "Connecte avec l'ID Champion : " << m_localChampionId
-                  << std::endl;
-        break;
+      if (reply >> type) {
+          if (type == MessageType::MATCHMAKING_QUEUE_ACK && !inQueue) {
+              std::cout << "Dans la file d'attente du matchmaking..." << std::endl;
+              inQueue = true;
+          } else if (type == MessageType::MATCHMAKING_FOUND) {
+              reply >> m_serverPort;
+              m_serverIp = senderIp.value().toString();
+              std::cout << "Instance de jeu trouvee ! Redirection vers le port " << m_serverPort << std::endl;
+              break;
+          }
       }
     }
+    
+    while (const auto event = m_window.pollEvent()) {
+        if (event->is<sf::Event::Closed>()) {
+            m_window.close();
+            return;
+        }
+    }
+
+    m_window.clear(sf::Color::Black);
+    m_window.display();
+    sf::sleep(sf::milliseconds(10));
   }
 
-  m_socket.setBlocking(
-      false); // On repasse en non bloquant pour la boucle de jeu
+  if (!m_window.isOpen()) return;
+
+  // 2. Connexion a l'instance de jeu
+  auto instanceIpStr = sf::IpAddress::resolve(m_serverIp);
+  if (!instanceIpStr) instanceIpStr = masterIpStr;
+  
+  std::cout << "Connexion a l'instance " << m_serverIp << ":" << m_serverPort << "..." << std::endl;
+  retryClock.restart();
+
+  // 3. Attente du JOIN_ACK de l'instance
+  while (m_window.isOpen()) {
+      if (retryClock.getElapsedTime().asMilliseconds() > 500) {
+          sf::Packet instanceJoin;
+          instanceJoin << MessageType::JOIN;
+          (void)m_socket.send(instanceJoin, instanceIpStr.value(), m_serverPort);
+          retryClock.restart();
+      }
+
+      if (m_socket.receive(reply, senderIp, senderPort) == sf::Socket::Status::Done && senderIp.has_value()) {
+          MessageType type;
+          if (reply >> type && type == MessageType::JOIN_ACK) {
+              reply >> m_localChampionId;
+              std::cout << "Connecte a l'instance avec l'ID Champion : " << m_localChampionId << std::endl;
+              m_gameState = GameState::LOBBY;
+              break;
+          }
+      }
+      
+      while (const auto event = m_window.pollEvent()) {
+          if (event->is<sf::Event::Closed>()) {
+              m_window.close();
+              return;
+          }
+      }
+
+      m_window.clear(sf::Color::Black);
+      m_window.display();
+      sf::sleep(sf::milliseconds(10));
+  }
+
+  m_socket.setBlocking(false); // On repasse en non bloquant pour la boucle de jeu
 }
 
 void Game::initWorld() {
@@ -201,103 +262,107 @@ void Game::processEvents() {
     if (event->is<sf::Event::Closed>())
       m_window.close();
 
-    // Raccourcis clavier
-    if (const auto *keyPressed = event->getIf<sf::Event::KeyPressed>()) {
-      if (keyPressed->code == sf::Keyboard::Key::Escape && m_settingsUI)
-        m_settingsUI->toggle();
-      if (keyPressed->code == sf::Keyboard::Key::P && m_shopUI)
-        m_shopUI->toggle();
-
-      // Debug : Level Up avec L
-      if (keyPressed->code == sf::Keyboard::Key::L && m_champion)
-        m_champion->debugLevelUp();
-
-      // Rappel (B)
-      if (keyPressed->code == sf::Keyboard::Key::B && m_champion) {
-        sendSpell(4);
-      }
-
-      // Sorts : Ctrl+Touche = upgrade, Touche seule = cast
-      if (m_champion) {
-        bool ctrl = keyPressed->control;
-        if (keyPressed->code == sf::Keyboard::Key::A) {
-          if (ctrl)
-            m_champion->upgradeSpell(0);
-          else
-            sendSpell(0);
-        }
-        if (keyPressed->code == sf::Keyboard::Key::Z) {
-          if (ctrl)
-            m_champion->upgradeSpell(1);
-          else
-            sendSpell(1);
-        }
-        if (keyPressed->code == sf::Keyboard::Key::E) {
-          if (ctrl)
-            m_champion->upgradeSpell(2);
-          else
-            sendSpell(2);
-        }
-        if (keyPressed->code == sf::Keyboard::Key::R) {
-          if (ctrl)
-            m_champion->upgradeSpell(3);
-          else
-            sendSpell(3);
-        }
-      }
-    }
-
-    // Dispatch souris aux fenêtres UI (factorisé !)
-    if (dispatchMouseEventToWindows(*event))
-      continue;
-
-    // Clic gauche sur le bouton BOUTIQUE du HUD
-    if (const auto *mousePressed =
-            event->getIf<sf::Event::MouseButtonPressed>()) {
-      if (mousePressed->button == sf::Mouse::Button::Left) {
-        sf::Vector2i pixelPos(mousePressed->position);
-        sf::Vector2f uiPos =
-            m_window.mapPixelToCoords(pixelPos, m_window.getDefaultView());
-        if (m_hud && m_hud->isShopButtonClicked(uiPos)) {
-          if (m_shopUI)
+    if (m_gameState == GameState::LOBBY) {
+        if (m_lobbyUI) m_lobbyUI->handleEvent(*event, m_window);
+    } else if (m_gameState == GameState::PLAYING) {
+        // Raccourcis clavier
+        if (const auto *keyPressed = event->getIf<sf::Event::KeyPressed>()) {
+          if (keyPressed->code == sf::Keyboard::Key::Escape && m_settingsUI)
+            m_settingsUI->toggle();
+          if (keyPressed->code == sf::Keyboard::Key::P && m_shopUI)
             m_shopUI->toggle();
-          continue;
-        }
-      }
 
-      // Clic droit dans le monde
-      if (mousePressed->button == sf::Mouse::Button::Right) {
-        sf::Vector2i pixelPos(mousePressed->position);
-        sf::Vector2f worldPos = m_window.mapPixelToCoords(pixelPos, m_camera);
+          // Debug : Level Up avec L
+          if (keyPressed->code == sf::Keyboard::Key::L && m_champion)
+            m_champion->debugLevelUp();
 
-        bool enemyClicked = false;
+          // Rappel (B)
+          if (keyPressed->code == sf::Keyboard::Key::B && m_champion) {
+            sendSpell(4);
+          }
 
-        for (auto &entity : m_entities) {
-          if (auto combatEntity = dynamic_cast<CombatEntity *>(entity.get())) {
-            if (combatEntity->getTeam() != Team::ALLIED &&
-                combatEntity->getBounds().contains(worldPos) &&
-                !combatEntity->isDead()) {
-              sendAttack(combatEntity->getNetworkId());
-              enemyClicked = true;
-              break;
+          // Sorts : Ctrl+Touche = upgrade, Touche seule = cast
+          if (m_champion) {
+            bool ctrl = keyPressed->control;
+            if (keyPressed->code == sf::Keyboard::Key::A) {
+              if (ctrl)
+                m_champion->upgradeSpell(0);
+              else
+                sendSpell(0);
+            }
+            if (keyPressed->code == sf::Keyboard::Key::Z) {
+              if (ctrl)
+                m_champion->upgradeSpell(1);
+              else
+                sendSpell(1);
+            }
+            if (keyPressed->code == sf::Keyboard::Key::E) {
+              if (ctrl)
+                m_champion->upgradeSpell(2);
+              else
+                sendSpell(2);
+            }
+            if (keyPressed->code == sf::Keyboard::Key::R) {
+              if (ctrl)
+                m_champion->upgradeSpell(3);
+              else
+                sendSpell(3);
             }
           }
         }
 
-        // On n'envoie que la requête au serveur, pas de pathfinding local !
-        for (auto &entity : m_entities) {
-          if (enemyClicked && entity.get() == m_champion)
-            continue;
-          // Localement, on dessine l'indicateur de clic s'il y en a un
-          if (dynamic_cast<ClickIndicator *>(entity.get())) {
-            entity->setTargetPosition(worldPos);
+        // Dispatch souris aux fenêtres UI (factorisé !)
+        if (dispatchMouseEventToWindows(*event))
+          continue;
+
+        // Clic gauche sur le bouton BOUTIQUE du HUD
+        if (const auto *mousePressed =
+                event->getIf<sf::Event::MouseButtonPressed>()) {
+          if (mousePressed->button == sf::Mouse::Button::Left) {
+            sf::Vector2i pixelPos(mousePressed->position);
+            sf::Vector2f uiPos =
+                m_window.mapPixelToCoords(pixelPos, m_window.getDefaultView());
+            if (m_hud && m_hud->isShopButtonClicked(uiPos)) {
+              if (m_shopUI)
+                m_shopUI->toggle();
+              continue;
+            }
+          }
+
+          // Clic droit dans le monde
+          if (mousePressed->button == sf::Mouse::Button::Right) {
+            sf::Vector2i pixelPos(mousePressed->position);
+            sf::Vector2f worldPos = m_window.mapPixelToCoords(pixelPos, m_camera);
+
+            bool enemyClicked = false;
+
+            for (auto &entity : m_entities) {
+              if (auto combatEntity = dynamic_cast<CombatEntity *>(entity.get())) {
+                if (combatEntity->getTeam() != Team::ALLIED &&
+                    combatEntity->getBounds().contains(worldPos) &&
+                    !combatEntity->isDead()) {
+                  sendAttack(combatEntity->getNetworkId());
+                  enemyClicked = true;
+                  break;
+                }
+              }
+            }
+
+            // On n'envoie que la requête au serveur, pas de pathfinding local !
+            for (auto &entity : m_entities) {
+              if (enemyClicked && entity.get() == m_champion)
+                continue;
+              // Localement, on dessine l'indicateur de clic s'il y en a un
+              if (dynamic_cast<ClickIndicator *>(entity.get())) {
+                entity->setTargetPosition(worldPos);
+              }
+            }
+
+            if (!enemyClicked) {
+              sendMove(worldPos.x, worldPos.y);
+            }
           }
         }
-
-        if (!enemyClicked) {
-          sendMove(worldPos.x, worldPos.y);
-        }
-      }
     }
   }
 }
@@ -312,7 +377,24 @@ void Game::processNetwork() {
          senderIp.has_value()) {
     MessageType type;
     if (packet >> type) {
-      if (type == MessageType::STATE) {
+      if (type == MessageType::LOBBY_STATE && m_gameState == GameState::LOBBY) {
+          uint32_t count;
+          if (packet >> count) {
+              std::vector<LobbyPlayerInfo> players;
+              for (uint32_t i = 0; i < count; ++i) {
+                  LobbyPlayerInfo p;
+                  packet >> p.networkId >> p.selectedChampion >> p.isLocked;
+                  players.push_back(p);
+              }
+              if (m_lobbyUI) m_lobbyUI->updateLobbyState(players, m_localChampionId);
+          }
+      } else if (type == MessageType::LOBBY_START_GAME && m_gameState == GameState::LOBBY) {
+          std::cout << "Lancement de la partie recu du serveur!" << std::endl;
+          initWorld();
+          // Initialiser l'interface apres avoir init le champion
+          m_hud = std::make_unique<HUD>(m_champion, m_font);
+          m_gameState = GameState::PLAYING;
+      } else if (type == MessageType::STATE && m_gameState == GameState::PLAYING) {
         uint32_t entityCount;
       packet >> entityCount;
 
@@ -322,10 +404,10 @@ void Game::processNetwork() {
 
         if (entityType == 1) { // Champion
           uint32_t id;
-          float x, y, hp, maxHp, mana, maxMana, gold, recallTimer;
+          float x, y, hp, maxHp, mana, maxMana, gold, recallTimer, respawnTimer;
           bool recalling;
           packet >> id >> x >> y >> hp >> maxHp >> mana >> maxMana >> gold >>
-              recalling >> recallTimer;
+              recalling >> recallTimer >> respawnTimer;
 
           bool found = false;
           for (auto &entity : m_entities) {
@@ -339,6 +421,7 @@ void Game::processNetwork() {
                 champ->setGold(gold);
                 champ->setIsRecalling(recalling);
                 champ->setRecallTimer(recallTimer);
+                champ->setRespawnTimer(respawnTimer);
               }
               found = true;
               break;
@@ -359,6 +442,7 @@ void Game::processNetwork() {
             newChamp->setGold(gold);
             newChamp->setIsRecalling(recalling);
             newChamp->setRecallTimer(recallTimer);
+            newChamp->setRespawnTimer(respawnTimer);
             m_entities.push_back(std::move(newChamp));
           }
         } else { // Generic CombatEntity (Nexus, Turret)
@@ -377,7 +461,7 @@ void Game::processNetwork() {
           }
         }
       }
-      } else if (type == MessageType::ATTACK_ANIM) {
+      } else if (type == MessageType::ATTACK_ANIM && m_gameState == GameState::PLAYING) {
         uint32_t attackerId, targetId;
         if (packet >> attackerId >> targetId) {
           Champion* attacker = nullptr;
@@ -398,40 +482,63 @@ void Game::processNetwork() {
 void Game::update(float deltaTime) {
   processNetwork();
 
-  if (m_champion) {
-    m_camera.setCenter(m_champion->getPosition());
-  }
+  if (m_gameState == GameState::LOBBY) {
+      if (m_lobbyUI) {
+          if (m_lobbyUI->hasPendingSelection()) {
+              std::string sel = m_lobbyUI->popSelection();
+              sf::Packet p; p << MessageType::LOBBY_SELECT_CHAMPION << sel;
+              if (auto ip = sf::IpAddress::resolve(m_serverIp)) {
+                  (void)m_socket.send(p, ip.value(), m_serverPort);
+              }
+          }
+          if (m_lobbyUI->hasPendingLock()) {
+              m_lobbyUI->popLock();
+              sf::Packet p; p << MessageType::LOBBY_LOCK_CHAMPION;
+              if (auto ip = sf::IpAddress::resolve(m_serverIp)) {
+                  (void)m_socket.send(p, ip.value(), m_serverPort);
+              }
+          }
+      }
+  } else if (m_gameState == GameState::PLAYING) {
+      // Seul l'indicateur de clic et potentiellement d'autres effets visuels ont
+      // besoin de l'update() local
+      for (auto &entity : m_entities) {
+        if (dynamic_cast<ClickIndicator *>(entity.get())) {
+          entity->update(deltaTime);
+        }
+        if (auto champ = dynamic_cast<Champion *>(entity.get())) {
+          champ->updateVisuals(deltaTime);
+        }
+        // L'update des `Champion` locaux est désactivé car la position est
+        // contrôlée par le réseau, mais on met à jour les visuels (lazers, etc.)
+      }
 
-  // Seul l'indicateur de clic et potentiellement d'autres effets visuels ont
-  // besoin de l'update() local
-  for (auto &entity : m_entities) {
-    if (dynamic_cast<ClickIndicator *>(entity.get())) {
-      entity->update(deltaTime);
-    }
-    if (auto champ = dynamic_cast<Champion *>(entity.get())) {
-      champ->updateVisuals(deltaTime);
-    }
-    // L'update des `Champion` locaux est désactivé car la position est
-    // contrôlée par le réseau, mais on met à jour les visuels (lazers, etc.)
+      if (m_champion) {
+        m_camera.setCenter(m_champion->getPosition());
+      }
   }
 }
 
 void Game::render() {
   m_window.clear(sf::Color(30, 30, 30));
 
-  m_renderer.renderWorld(m_window, m_camera, m_entities);
-  m_renderer.renderMinimap(m_window, m_minimapView, m_entities);
+  if (m_gameState == GameState::LOBBY) {
+      if (m_lobbyUI) m_lobbyUI->draw(m_window);
+  } else if (m_gameState == GameState::PLAYING) {
+      m_renderer.renderWorld(m_window, m_camera, m_entities);
+      m_renderer.renderMinimap(m_window, m_minimapView, m_entities);
 
-  if (m_fontLoaded) {
-    m_renderer.renderUI(m_window, m_hud.get(), m_uiWindows);
+      if (m_fontLoaded) {
+        m_renderer.renderUI(m_window, m_hud.get(), m_uiWindows);
+      }
   }
 
   m_window.display();
 }
 
 void Game::sendPacket(sf::Packet &packet) {
-  if (auto ipObj = sf::IpAddress::resolve(Config::Network::SERVER_IP)) {
-    (void)m_socket.send(packet, ipObj.value(), Config::Network::SERVER_PORT);
+  if (auto ipObj = sf::IpAddress::resolve(m_serverIp)) {
+    (void)m_socket.send(packet, ipObj.value(), m_serverPort);
   }
 }
 
@@ -450,5 +557,17 @@ void Game::sendAttack(uint32_t targetId) {
 void Game::sendSpell(std::uint8_t spellIndex) {
   sf::Packet packet;
   packet << MessageType::SPELL << spellIndex;
+  sendPacket(packet);
+}
+
+void Game::sendBuyItem(int itemId) {
+  sf::Packet packet;
+  packet << MessageType::BUY_ITEM << itemId;
+  sendPacket(packet);
+}
+
+void Game::sendSellItem(int inventoryIndex) {
+  sf::Packet packet;
+  packet << MessageType::SELL_ITEM << inventoryIndex;
   sendPacket(packet);
 }

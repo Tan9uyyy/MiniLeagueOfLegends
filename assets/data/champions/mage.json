@@ -1,0 +1,21 @@
+{
+  "id": "mage_feu",
+  "name": "Ignis",
+  "texture_path": "textures/champions/mage_sheet.png",
+  "base_hp": 1000,
+  "base_mana": 500,
+  "base_regen_hp": 2,
+  "base_regen_mana": 1,
+  "base_speed": 320,
+  "base_range": 150,
+  "base_damage": 50,
+  "base_attack_speed": 1,
+  "base_armor": 10,
+  "base_rm": 30,
+  "spells": [
+    "boule_de_feu",
+    "mur_de_flammes",
+    "bouclier_de_feu",
+    "explosion_ult"
+  ]
+}

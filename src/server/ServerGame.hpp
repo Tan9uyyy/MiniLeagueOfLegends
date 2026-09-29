@@ -9,15 +9,22 @@
 
 #include <optional>
 
+enum class ServerState {
+    LOBBY,
+    PLAYING
+};
+
 struct ClientInfo {
     std::optional<sf::IpAddress> ip;
     unsigned short port;
     uint32_t championId;
+    std::string selectedChampion = "";
+    bool isLocked = false;
 };
 
 class ServerGame {
 public:
-    ServerGame();
+    ServerGame(unsigned short port);
     void run();
 
 private:
@@ -25,8 +32,11 @@ private:
     void processNetwork();
     void update(float deltaTime);
     void broadcastState();
+    void checkLobbyStatus();
+    void broadcastLobbyState();
 
     sf::UdpSocket m_socket;
+    ServerState m_serverState = ServerState::LOBBY;
     
     Map* m_gameMap;
     std::vector<std::unique_ptr<Entity>> m_entities;

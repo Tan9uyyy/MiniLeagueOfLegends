@@ -6,13 +6,14 @@
 #include "NetworkIds.hpp"
 #include <iostream>
 
-ServerGame::ServerGame() {
-    if (m_socket.bind(Config::Network::SERVER_PORT) != sf::Socket::Status::Done) {
-        std::cerr << "Serveur : Erreur lors du bind sur le port " << Config::Network::SERVER_PORT << std::endl;
+ServerGame::ServerGame(unsigned short port) {
+    if (m_socket.bind(port) != sf::Socket::Status::Done) {
+        std::cerr << "Serveur : Erreur lors du bind sur le port " << port << std::endl;
+        std::exit(EXIT_FAILURE);
     }
     m_socket.setBlocking(false);
     initWorld();
-    std::cout << "Serveur demarre sur le port " << Config::Network::SERVER_PORT << std::endl;
+    std::cout << "Serveur demarre sur le port " << port << std::endl;
 }
 
 void ServerGame::initWorld() {
@@ -68,14 +69,7 @@ void ServerGame::processNetwork() {
             if (type == MessageType::JOIN) {
                 std::cout << "Serveur : Nouveau client " << senderIp.value() << ":" << senderPort << std::endl;
                 
-                // Créer un champion pour ce joueur
-                // On les met par défaut dans l'équipe bleue, mais on pourrait alterner
-                sf::Vector2f spawnPos = m_gameMap->getSpawnPosition(Team::ALLIED); 
-                auto champion = std::make_unique<Champion>(spawnPos, *m_gameMap, Team::ALLIED);
-                
                 uint32_t champId = m_nextNetworkId++;
-                champion->setNetworkId(champId);
-                m_entities.push_back(std::move(champion));
                 
                 ClientInfo newClient;
                 newClient.ip = senderIp.value();
@@ -88,7 +82,29 @@ void ServerGame::processNetwork() {
                 reply << MessageType::JOIN_ACK << champId;
                 (void)m_socket.send(reply, senderIp.value(), senderPort);
 
-            } else if (type == MessageType::MOVE) {
+            } else if (type == MessageType::LOBBY_SELECT_CHAMPION && m_serverState == ServerState::LOBBY) {
+                std::string championId;
+                if (packet >> championId) {
+                    for (auto& client : m_clients) {
+                        if (client.ip.has_value() && client.ip.value() == senderIp.value() && client.port == senderPort) {
+                            if (!client.isLocked) {
+                                client.selectedChampion = championId;
+                            }
+                            break;
+                        }
+                    }
+                }
+            } else if (type == MessageType::LOBBY_LOCK_CHAMPION && m_serverState == ServerState::LOBBY) {
+                for (auto& client : m_clients) {
+                    if (client.ip.has_value() && client.ip.value() == senderIp.value() && client.port == senderPort) {
+                        if (!client.selectedChampion.empty()) {
+                            client.isLocked = true;
+                        }
+                        break;
+                    }
+                }
+                checkLobbyStatus();
+            } else if (type == MessageType::MOVE && m_serverState == ServerState::PLAYING) {
                 float targetX, targetY;
                 if (packet >> targetX >> targetY) {
                     for (const auto& client : m_clients) {
@@ -103,7 +119,7 @@ void ServerGame::processNetwork() {
                         }
                     }
                 }
-            } else if (type == MessageType::ATTACK) {
+            } else if (type == MessageType::ATTACK && m_serverState == ServerState::PLAYING) {
                 uint32_t targetId;
                 if (packet >> targetId) {
                     for (const auto& client : m_clients) {
@@ -125,7 +141,7 @@ void ServerGame::processNetwork() {
                         }
                     }
                 }
-            } else if (type == MessageType::SPELL) {
+            } else if (type == MessageType::SPELL && m_serverState == ServerState::PLAYING) {
                 uint8_t spellIndex;
                 if (packet >> spellIndex) {
                     for (const auto& client : m_clients) {
@@ -146,6 +162,46 @@ void ServerGame::processNetwork() {
                         }
                     }
                 }
+            } else if (type == MessageType::BUY_ITEM && m_serverState == ServerState::PLAYING) {
+                int itemId;
+                if (packet >> itemId) {
+                    for (const auto& client : m_clients) {
+                        if (client.ip.has_value() && client.ip.value() == senderIp.value() && client.port == senderPort) {
+                            for (auto& entity : m_entities) {
+                                if (entity->getNetworkId() == client.championId) {
+                                    if (auto champ = dynamic_cast<Champion*>(entity.get())) {
+                                        if (champ->canShop()) {
+                                            for (const auto& item : ItemTemplate::getShopItems()) {
+                                                if (item.id == itemId) { champ->buyItem(item); break; }
+                                            }
+                                        }
+                                    }
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+            } else if (type == MessageType::SELL_ITEM && m_serverState == ServerState::PLAYING) {
+                int inventoryIndex;
+                if (packet >> inventoryIndex) {
+                    for (const auto& client : m_clients) {
+                        if (client.ip.has_value() && client.ip.value() == senderIp.value() && client.port == senderPort) {
+                            for (auto& entity : m_entities) {
+                                if (entity->getNetworkId() == client.championId) {
+                                    if (auto champ = dynamic_cast<Champion*>(entity.get())) {
+                                        if (champ->canShop()) {
+                                            champ->sellItem(inventoryIndex);
+                                        }
+                                    }
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
             }
         }
     }
@@ -156,6 +212,11 @@ void ServerGame::update(float deltaTime) {
         entity->update(deltaTime);
 
         if (auto champ = dynamic_cast<Champion*>(entity.get())) {
+            // Regeneration Base (10% HP/Mana par seconde dans la fontaine)
+            if (m_gameMap->isInSpawnArea(champ->getPosition(), champ->getTeam())) {
+                champ->regen(0.10f, 0.10f, deltaTime);
+            }
+
             uint32_t targetId;
             if (champ->popJustAttacked(targetId)) {
                 sf::Packet p;
@@ -192,13 +253,68 @@ void ServerGame::broadcastState() {
                         << champion->getHealth() << champion->getMaxHealth()
                         << champion->getMana() << champion->getMaxMana()
                         << champion->getGold() 
-                        << champion->isRecalling() << champion->getRecallTimer();
+                        << champion->isRecalling() << champion->getRecallTimer()
+                        << champion->getRespawnTimer();
         } else if (auto combat = dynamic_cast<CombatEntity*>(entity.get())) {
             sf::Vector2f pos = entity->getPosition(); // Will be 0,0 for Buildings but it's ok
             statePacket << (uint8_t)0 // 0 = Generic CombatEntity
                         << entity->getNetworkId() << pos.x << pos.y
                         << combat->getHealth() << combat->getMaxHealth();
         }
+    }
+
+    for (const auto& client : m_clients) {
+        if (client.ip.has_value()) {
+            (void)m_socket.send(statePacket, client.ip.value(), client.port);
+        }
+    }
+}
+
+void ServerGame::checkLobbyStatus() {
+    if (m_serverState != ServerState::LOBBY) return;
+    if (m_clients.size() < (size_t)Config::Network::PLAYERS_PER_MATCH) return;
+
+    bool allLocked = true;
+    for (const auto& client : m_clients) {
+        if (!client.isLocked) {
+            allLocked = false;
+            break;
+        }
+    }
+
+    if (allLocked) {
+        std::cout << "Tous les joueurs sont prets. Lancement de la partie !" << std::endl;
+        
+        // Spawn champions
+        for (const auto& client : m_clients) {
+            sf::Vector2f spawnPos = m_gameMap->getSpawnPosition(Team::ALLIED);
+            std::cout << "Spawn champion: " << client.selectedChampion << " pour l'ID " << client.championId << std::endl;
+            auto champion = std::make_unique<Champion>(spawnPos, *m_gameMap, Team::ALLIED);
+            champion->setNetworkId(client.championId);
+            m_entities.push_back(std::move(champion));
+        }
+
+        m_serverState = ServerState::PLAYING;
+
+        sf::Packet notify;
+        notify << MessageType::LOBBY_START_GAME;
+        for (const auto& client : m_clients) {
+            if (client.ip.has_value()) {
+                (void)m_socket.send(notify, client.ip.value(), client.port);
+            }
+        }
+    }
+}
+
+void ServerGame::broadcastLobbyState() {
+    if (m_clients.empty()) return;
+
+    sf::Packet statePacket;
+    statePacket << MessageType::LOBBY_STATE;
+    statePacket << static_cast<uint32_t>(m_clients.size());
+
+    for (const auto& client : m_clients) {
+        statePacket << client.championId << client.selectedChampion << client.isLocked;
     }
 
     for (const auto& client : m_clients) {
@@ -217,10 +333,17 @@ void ServerGame::run() {
         float deltaTime = clock.restart().asSeconds();
         
         processNetwork();
-        update(deltaTime);
+        
+        if (m_serverState == ServerState::PLAYING) {
+            update(deltaTime);
+        }
         
         if (networkClock.getElapsedTime().asSeconds() >= NETWORK_TICK_RATE) {
-            broadcastState();
+            if (m_serverState == ServerState::LOBBY) {
+                broadcastLobbyState();
+            } else {
+                broadcastState();
+            }
             networkClock.restart();
         }
 

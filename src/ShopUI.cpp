@@ -48,7 +48,11 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
                     }
                     if (realIndex != -1) {
                         m_selectedItemIndex = realIndex;
-                        if (isRight && m_champion->canShop()) m_champion->buyItem(m_allItems[realIndex]);
+                        if (isRight && m_champion->canShop()) {
+                            if (m_champion->buyItem(m_allItems[realIndex])) {
+                                if (onBuyItem) onBuyItem(m_allItems[realIndex].id);
+                            }
+                        }
                         return UIAction::CONSUMED;
                     }
                 }
@@ -59,7 +63,11 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
             for (int i = 0; i < (int)inv.size(); ++i) {
                 sf::FloatRect slotBounds({basePos.x + 100 + i * 50.0f, basePos.y + 345}, {40, 40});
                 if (slotBounds.contains(mousePos)) {
-                    if (isRight && m_champion->canShop()) m_champion->sellItem(i);
+                    if (isRight && m_champion->canShop()) {
+                        if (m_champion->sellItem(i)) {
+                            if (onSellItem) onSellItem(i);
+                        }
+                    }
                     return UIAction::CONSUMED;
                 }
             }
@@ -69,7 +77,9 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
                 sf::FloatRect buyBtn({basePos.x + 350, basePos.y + 300}, {100, 40});
                 if (buyBtn.contains(mousePos)) {
                     if (m_champion->canShop()) {
-                        m_champion->buyItem(m_allItems[m_selectedItemIndex]);
+                        if (m_champion->buyItem(m_allItems[m_selectedItemIndex])) {
+                            if (onBuyItem) onBuyItem(m_allItems[m_selectedItemIndex].id);
+                        }
                     }
                     return UIAction::CONSUMED;
                 }
@@ -79,7 +89,9 @@ UIAction ShopUI::onHandleEvent(const sf::Event& event, const sf::Vector2f& mouse
                     sf::FloatRect sellBtn({basePos.x + 460, basePos.y + 300}, {100, 40});
                     if (sellBtn.contains(mousePos)) {
                         if (m_champion->canShop()) {
-                            m_champion->sellItem(invIdx);
+                            if (m_champion->sellItem(invIdx)) {
+                                if (onSellItem) onSellItem(invIdx);
+                            }
                         }
                         return UIAction::CONSUMED;
                     }

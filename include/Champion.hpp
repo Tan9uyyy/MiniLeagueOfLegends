@@ -66,6 +66,11 @@ public:
   void setIsRecalling(bool r) { m_isRecalling = r; }
   void setRecallTimer(float t) { m_recallTimer = t; }
   float getRecallTimer() const { return m_recallTimer; }
+  float getRespawnTimer() const { return m_respawnTimer; }
+  void setRespawnTimer(float t) { m_respawnTimer = t; }
+
+  // Restauration / Régénération (Serveur)
+  void regen(float hpPercent, float manaPercent, float deltaTime);
 
   // Système de Sorts et Niveaux
   int getLevel() const { return m_level; }

@@ -1,0 +1,11 @@
+{
+  "id": "boule_de_feu",
+  "type": "SkillshotProjectile",
+  "cooldown": 4.5,
+  "mana_cost": 50,
+  "physic_damage": 20,
+  "magic_damage": 80,
+  "projectile_speed": 600,
+  "hitbox_radius": 20,
+  "texture_path": "spells/fireball.png"
+}

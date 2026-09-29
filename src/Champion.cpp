@@ -321,6 +321,16 @@ bool Champion::sellItem(int inventoryIndex) {
     return true;
 }
 
+void Champion::regen(float hpPercent, float manaPercent, float deltaTime) {
+    if (isDead()) return;
+    
+    float regenHP = m_maxHealth * hpPercent * deltaTime;
+    float regenMP = m_maxMana * manaPercent * deltaTime;
+    
+    m_currentHealth = std::min(m_maxHealth, m_currentHealth + regenHP);
+    m_currentMana = std::min(m_maxMana, m_currentMana + regenMP);
+}
+
 void Champion::takeDamage(float amount) {
     bool wasDead = isDead();
     CombatEntity::takeDamage(amount);

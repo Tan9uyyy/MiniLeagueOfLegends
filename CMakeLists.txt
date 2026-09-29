@@ -34,6 +34,7 @@ set(CLIENT_SRC_FILES
     src/HUD/HUDSpells.cpp
     src/HUD/HUDLevel.cpp
     src/HUD/HUDGold.cpp
+    src/HUD/LobbyUI.cpp
     src/ShopUI.cpp
     src/SettingsUI.cpp
     src/UIWindow.cpp
@@ -97,4 +98,29 @@ set_target_properties(${PROJECT_NAME}Server PROPERTIES
 # 6. Copier le dossier assets à côté de l'exécutable
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets 
      DESTINATION ${CMAKE_BINARY_DIR}/bin
+)
+
+# --- CIBLE SERVEUR MAITRE ---
+set(MASTER_SERVER_SRC_FILES
+    src/server/MasterServerMain.cpp
+    src/server/MasterServer.cpp
+)
+
+add_executable(${PROJECT_NAME}MasterServer ${MASTER_SERVER_SRC_FILES})
+
+target_include_directories(${PROJECT_NAME}MasterServer PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    target_compile_options(${PROJECT_NAME}MasterServer PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+target_link_libraries(${PROJECT_NAME}MasterServer PRIVATE
+    SFML::System
+    SFML::Network
+)
+
+set_target_properties(${PROJECT_NAME}MasterServer PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )

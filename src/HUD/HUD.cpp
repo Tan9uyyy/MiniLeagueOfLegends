@@ -23,6 +23,28 @@ void HUD::draw(sf::RenderWindow &window) {
   float screenW = window.getDefaultView().getSize().x;
   float screenH = window.getDefaultView().getSize().y;
 
+  if (m_champion->isDead()) {
+    float timer = m_champion->getRespawnTimer();
+    sf::Text deathText(
+        m_font,
+        "REAPPARITION DANS : " + std::to_string((int)std::ceil(timer)) + "s",
+        30);
+    deathText.setFillColor(sf::Color::Red);
+    sf::FloatRect bounds = deathText.getLocalBounds();
+    deathText.setPosition(
+        {screenW / 2.0f - bounds.size.x / 2.0f, screenH / 4.0f});
+
+    sf::RectangleShape bg(
+        sf::Vector2f(bounds.size.x + 40.0f, bounds.size.y + 20.0f));
+    bg.setFillColor(sf::Color(0, 0, 0, 200));
+    bg.setPosition(
+        {deathText.getPosition().x - 20.0f, deathText.getPosition().y - 10.0f});
+
+    window.draw(bg);
+    window.draw(deathText);
+    // We continue to draw the rest of the HUD even if dead
+  }
+
   // --- CALCUL DES POSITIONS (Centralisé ici pour la cohérence) ---
   float barWidth = 400.0f;
   float barX = screenW / 2.0f - barWidth / 2.0f;
