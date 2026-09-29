@@ -1,0 +1,26 @@
+# Harmonisation des fins de lignes (LF par défaut pour tous les fichiers texte)
+* text=auto eol=lf
+
+# Code source et scripts
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cmake text eol=lf
+CMakeLists.txt text eol=lf
+CMakePresets.json text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Fichiers binaires (médias, polices, etc.)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.ogg binary
+*.ico binary

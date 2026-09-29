@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MiniLeagueOfLegendsServer.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\MiniLeagueOfLegendsServer.dir/objects.a @CMakeFiles\MiniLeagueOfLegendsServer.dir\objects1.rsp
-C:\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\MiniLeagueOfLegendsServer.dir/objects.a -Wl,--no-whole-archive -o bin\MiniLeagueOfLegendsServer.exe -Wl,--out-implib,libMiniLeagueOfLegendsServer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MiniLeagueOfLegendsServer.dir\linkLibs.rsp

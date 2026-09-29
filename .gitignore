@@ -1,0 +1,42 @@
+# Dossiers de compilation et binaires
+build/
+build-*/
+bin/
+.cache/
+compile_commands.json
+
+# Fichiers d'objets et bibliothèques
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Fichiers générés par CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!/CMakeLists.txt
+!/cmake/**
+
+# Caches et index IDE / Compilateurs
+.cache/
+.clangd/
+compile_flags.txt
+
+# IDEs et éditeurs de texte
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Fichiers temporaires ou archives locales
+*.tar.gz
+*.zip
+*.7z
